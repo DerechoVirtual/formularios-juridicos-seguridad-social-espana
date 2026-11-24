@@ -1,6 +1,6 @@
 ---
 name: demanda-reclamacion-cantidad-orden-social-ss-014
-description: "Demanda de reclamación de cantidad en el orden social. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de reclamación de cantidad en el orden social. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de reclamación de cantidad en el orden social

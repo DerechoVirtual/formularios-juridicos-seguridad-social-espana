@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-inss-impugna-devolucion-prestacion-cese-ss-003
-description: "Demanda contra el INSS que impugna la devolución de la prestación de cese de actividad (COVID-19). Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra el INSS que impugna la devolución de la prestación de cese de actividad (COVID-19). Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra el INSS que impugna la devolución de la prestación de cese de actividad (COVID-19)

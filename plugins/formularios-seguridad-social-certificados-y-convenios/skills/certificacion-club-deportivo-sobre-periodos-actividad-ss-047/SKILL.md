@@ -1,6 +1,6 @@
 ---
 name: certificacion-club-deportivo-sobre-periodos-actividad-ss-047
-description: "Certificación del club deportivo sobre los periodos de actividad como deportista profesional. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Certificación del club deportivo sobre los periodos de actividad como deportista profesional. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Certificación del club deportivo sobre los periodos de actividad como deportista profesional

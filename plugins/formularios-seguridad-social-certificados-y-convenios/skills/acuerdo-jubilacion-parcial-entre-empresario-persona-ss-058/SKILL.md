@@ -1,6 +1,6 @@
 ---
 name: acuerdo-jubilacion-parcial-entre-empresario-persona-ss-058
-description: "Acuerdo de jubilación parcial entre empresario y persona trabajadora. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Acuerdo de jubilación parcial entre empresario y persona trabajadora. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Acuerdo de jubilación parcial entre empresario y persona trabajadora

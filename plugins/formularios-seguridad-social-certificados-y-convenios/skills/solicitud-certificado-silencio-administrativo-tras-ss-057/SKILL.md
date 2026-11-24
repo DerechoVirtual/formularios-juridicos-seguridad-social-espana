@@ -1,6 +1,6 @@
 ---
 name: solicitud-certificado-silencio-administrativo-tras-ss-057
-description: "Solicitud de certificado de silencio administrativo tras recurso de alzada contra acta de infracción. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Solicitud de certificado de silencio administrativo tras recurso de alzada contra acta de infracción. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Solicitud de certificado de silencio administrativo tras recurso de alzada contra acta de infracción

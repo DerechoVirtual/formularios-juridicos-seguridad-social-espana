@@ -1,6 +1,6 @@
 ---
 name: peticion-acumulacion-recursos-suplicacion-art-234-lrjs-ss-035
-description: "Petición de acumulación de recursos de suplicación (art. 234 LRJS). Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Petición de acumulación de recursos de suplicación (art. 234 LRJS). Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Petición de acumulación de recursos de suplicación (art. 234 LRJS)

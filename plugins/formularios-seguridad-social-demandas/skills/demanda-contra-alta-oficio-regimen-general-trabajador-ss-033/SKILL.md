@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-alta-oficio-regimen-general-trabajador-ss-033
-description: "Demanda contra el alta de oficio en el Régimen General de un trabajador autónomo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra el alta de oficio en el Régimen General de un trabajador autónomo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra el alta de oficio en el Régimen General de un trabajador autónomo

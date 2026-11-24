@@ -1,6 +1,6 @@
 ---
 name: demanda-reconocimiento-accidente-trabajo-dana-octubre-ss-004
-description: "Demanda de reconocimiento de accidente de trabajo por la DANA de octubre y noviembre de 2024. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de reconocimiento de accidente de trabajo por la DANA de octubre y noviembre de 2024. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de reconocimiento de accidente de trabajo por la DANA de octubre y noviembre de 2024

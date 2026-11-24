@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-mutua-cese-actividad-autonomos-fuerza-ss-002
-description: "Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor (incendios forestales). Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor (incendios forestales). Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor (incendios forestales)

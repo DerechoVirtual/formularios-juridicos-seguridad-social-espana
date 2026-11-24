@@ -1,6 +1,6 @@
 ---
 name: recurso-alzada-frente-acta-liquidacion-art-34-lgss-ss-040
-description: "Recurso de alzada frente a un acta de liquidación (art. 34 LGSS). Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Recurso de alzada frente a un acta de liquidación (art. 34 LGSS). Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Recurso de alzada frente a un acta de liquidación (art. 34 LGSS)

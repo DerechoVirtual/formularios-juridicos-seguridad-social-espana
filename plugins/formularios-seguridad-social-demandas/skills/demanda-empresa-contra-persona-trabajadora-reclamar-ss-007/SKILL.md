@@ -1,6 +1,6 @@
 ---
 name: demanda-empresa-contra-persona-trabajadora-reclamar-ss-007
-description: "Demanda de la empresa contra la persona trabajadora para reclamar una cantidad adeudada. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de la empresa contra la persona trabajadora para reclamar una cantidad adeudada. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de la empresa contra la persona trabajadora para reclamar una cantidad adeudada

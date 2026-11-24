@@ -1,6 +1,6 @@
 ---
 name: demanda-reclamar-prestaciones-seguridad-social-reintegro-ss-009
-description: "Demanda para reclamar prestaciones de la Seguridad Social (reintegro de gastos médicos y otras). Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda para reclamar prestaciones de la Seguridad Social (reintegro de gastos médicos y otras). Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda para reclamar prestaciones de la Seguridad Social (reintegro de gastos médicos y otras)

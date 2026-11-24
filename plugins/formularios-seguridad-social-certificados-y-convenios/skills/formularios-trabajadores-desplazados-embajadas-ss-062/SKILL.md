@@ -1,6 +1,6 @@
 ---
 name: formularios-trabajadores-desplazados-embajadas-ss-062
-description: "Formularios para trabajadores desplazados a embajadas y consulados de países sin convenio bilateral. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Formularios para trabajadores desplazados a embajadas y consulados de países sin convenio bilateral. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Formularios para trabajadores desplazados a embajadas y consulados de países sin convenio bilateral

@@ -1,6 +1,6 @@
 ---
 name: pension-asistencial-ancianidad-espanoles-origen-ss-042
-description: "Pensión asistencial por ancianidad para españoles de origen retornados. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Pensión asistencial por ancianidad para españoles de origen retornados. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Pensión asistencial por ancianidad para españoles de origen retornados

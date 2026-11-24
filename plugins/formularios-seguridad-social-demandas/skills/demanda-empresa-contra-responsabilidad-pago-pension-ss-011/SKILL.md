@@ -1,6 +1,6 @@
 ---
 name: demanda-empresa-contra-responsabilidad-pago-pension-ss-011
-description: "Demanda de la empresa contra la responsabilidad de pago de la pensión por contrato de relevo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de la empresa contra la responsabilidad de pago de la pensión por contrato de relevo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de la empresa contra la responsabilidad de pago de la pensión por contrato de relevo

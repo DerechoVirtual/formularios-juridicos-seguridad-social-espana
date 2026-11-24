@@ -1,6 +1,6 @@
 ---
 name: declaracion-responsable-exencion-cotizacion-erte-ss-052
-description: "Declaración responsable de exención de cotización por ERTE y Mecanismo RED. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Declaración responsable de exención de cotización por ERTE y Mecanismo RED. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Declaración responsable de exención de cotización por ERTE y Mecanismo RED

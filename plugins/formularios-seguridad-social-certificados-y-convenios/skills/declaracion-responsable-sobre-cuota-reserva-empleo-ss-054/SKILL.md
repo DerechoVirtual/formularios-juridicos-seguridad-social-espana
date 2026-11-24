@@ -1,6 +1,6 @@
 ---
 name: declaracion-responsable-sobre-cuota-reserva-empleo-ss-054
-description: "Declaración responsable sobre la cuota de reserva de empleo para personas con discapacidad. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Declaración responsable sobre la cuota de reserva de empleo para personas con discapacidad. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Declaración responsable sobre la cuota de reserva de empleo para personas con discapacidad

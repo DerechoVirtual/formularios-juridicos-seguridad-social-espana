@@ -1,6 +1,6 @@
 ---
 name: reconvencion-ante-lo-social-no-haberse-citado-demandado-ss-025
-description: "Reconvención ante lo Social por no haberse citado al demandado a la conciliación previa en el SMAC. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Reconvención ante lo Social por no haberse citado al demandado a la conciliación previa en el SMAC. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Reconvención ante lo Social por no haberse citado al demandado a la conciliación previa en el SMAC

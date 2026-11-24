@@ -1,6 +1,6 @@
 ---
 name: escrito-acredita-intento-celebrar-conciliacion-previa-ss-026
-description: "Escrito que acredita el intento de celebrar la conciliación previa. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Escrito que acredita el intento de celebrar la conciliación previa. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Escrito que acredita el intento de celebrar la conciliación previa

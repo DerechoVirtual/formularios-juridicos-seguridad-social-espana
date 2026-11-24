@@ -1,6 +1,6 @@
 ---
 name: recurso-queja-contra-auto-inadmite-anuncio-recurso-ss-037
-description: "Recurso de queja contra el auto que inadmite el anuncio del recurso de suplicación. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Recurso de queja contra el auto que inadmite el anuncio del recurso de suplicación. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Recurso de queja contra el auto que inadmite el anuncio del recurso de suplicación

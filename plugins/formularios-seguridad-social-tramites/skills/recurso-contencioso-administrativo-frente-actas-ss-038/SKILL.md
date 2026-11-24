@@ -1,6 +1,6 @@
 ---
 name: recurso-contencioso-administrativo-frente-actas-ss-038
-description: "Recurso contencioso-administrativo frente a actas de la Inspección de Trabajo y Seguridad Social. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Recurso contencioso-administrativo frente a actas de la Inspección de Trabajo y Seguridad Social. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Recurso contencioso-administrativo frente a actas de la Inspección de Trabajo y Seguridad Social

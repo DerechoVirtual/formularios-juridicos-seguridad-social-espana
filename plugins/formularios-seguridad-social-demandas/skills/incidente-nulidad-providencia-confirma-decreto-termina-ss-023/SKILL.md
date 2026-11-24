@@ -1,6 +1,6 @@
 ---
 name: incidente-nulidad-providencia-confirma-decreto-termina-ss-023
-description: "Incidente de nulidad de la providencia que confirma el decreto que termina el monitorio. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Incidente de nulidad de la providencia que confirma el decreto que termina el monitorio. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Incidente de nulidad de la providencia que confirma el decreto que termina el monitorio

@@ -1,6 +1,6 @@
 ---
 name: escrito-formalizacion-recurso-suplicacion-ss-013
-description: "Escrito de formalización del recurso de suplicación. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Escrito de formalización del recurso de suplicación. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Escrito de formalización del recurso de suplicación

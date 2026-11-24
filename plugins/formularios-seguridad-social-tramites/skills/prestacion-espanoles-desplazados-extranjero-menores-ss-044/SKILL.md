@@ -1,6 +1,6 @@
 ---
 name: prestacion-espanoles-desplazados-extranjero-menores-ss-044
-description: "Prestación para españoles desplazados al extranjero de menores por la guerra civil. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Prestación para españoles desplazados al extranjero de menores por la guerra civil. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Prestación para españoles desplazados al extranjero de menores por la guerra civil

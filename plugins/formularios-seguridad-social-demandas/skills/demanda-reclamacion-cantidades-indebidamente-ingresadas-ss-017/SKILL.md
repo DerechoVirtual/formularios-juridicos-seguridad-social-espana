@@ -1,6 +1,6 @@
 ---
 name: demanda-reclamacion-cantidades-indebidamente-ingresadas-ss-017
-description: "Demanda de reclamación de cantidades indebidamente ingresadas a la Seguridad Social. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de reclamación de cantidades indebidamente ingresadas a la Seguridad Social. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de reclamación de cantidades indebidamente ingresadas a la Seguridad Social

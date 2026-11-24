@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-extincion-prestacion-subsidio-desempleo-ss-018
-description: "Demanda contra la extinción de la prestación o subsidio de desempleo por traslado al extranjero. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra la extinción de la prestación o subsidio de desempleo por traslado al extranjero. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra la extinción de la prestación o subsidio de desempleo por traslado al extranjero

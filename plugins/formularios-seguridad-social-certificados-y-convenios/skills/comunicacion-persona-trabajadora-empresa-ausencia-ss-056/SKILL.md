@@ -1,6 +1,6 @@
 ---
 name: comunicacion-persona-trabajadora-empresa-ausencia-ss-056
-description: "Comunicación de la persona trabajadora a la empresa de su ausencia o reducción de jornada. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Comunicación de la persona trabajadora a la empresa de su ausencia o reducción de jornada. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Comunicación de la persona trabajadora a la empresa de su ausencia o reducción de jornada

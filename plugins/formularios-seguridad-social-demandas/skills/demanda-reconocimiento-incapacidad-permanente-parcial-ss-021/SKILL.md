@@ -1,6 +1,6 @@
 ---
 name: demanda-reconocimiento-incapacidad-permanente-parcial-ss-021
-description: "Demanda de reconocimiento de incapacidad permanente parcial. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de reconocimiento de incapacidad permanente parcial. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de reconocimiento de incapacidad permanente parcial

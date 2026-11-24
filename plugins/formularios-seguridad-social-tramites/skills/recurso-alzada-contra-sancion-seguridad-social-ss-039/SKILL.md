@@ -1,6 +1,6 @@
 ---
 name: recurso-alzada-contra-sancion-seguridad-social-ss-039
-description: "Recurso de alzada contra sanción de Seguridad Social a empresarios, entidades formativas y autónomos. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Recurso de alzada contra sanción de Seguridad Social a empresarios, entidades formativas y autónomos. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Recurso de alzada contra sanción de Seguridad Social a empresarios, entidades formativas y autónomos

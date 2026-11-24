@@ -1,6 +1,6 @@
 ---
 name: comunicacion-inss-imposibilidad-embargar-salario-ss-051
-description: "Comunicación al INSS de la imposibilidad de embargar el salario. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Comunicación al INSS de la imposibilidad de embargar el salario. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Comunicación al INSS de la imposibilidad de embargar el salario

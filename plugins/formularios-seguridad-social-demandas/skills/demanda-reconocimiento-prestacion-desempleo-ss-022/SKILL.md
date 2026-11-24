@@ -1,6 +1,6 @@
 ---
 name: demanda-reconocimiento-prestacion-desempleo-ss-022
-description: "Demanda de reconocimiento de la prestación por desempleo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de reconocimiento de la prestación por desempleo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de reconocimiento de la prestación por desempleo

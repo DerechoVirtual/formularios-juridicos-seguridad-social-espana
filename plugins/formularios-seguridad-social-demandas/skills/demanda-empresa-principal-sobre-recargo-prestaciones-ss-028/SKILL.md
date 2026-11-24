@@ -1,6 +1,6 @@
 ---
 name: demanda-empresa-principal-sobre-recargo-prestaciones-ss-028
-description: "Demanda de la empresa principal sobre recargo de prestaciones por falta de medidas de seguridad. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de la empresa principal sobre recargo de prestaciones por falta de medidas de seguridad. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de la empresa principal sobre recargo de prestaciones por falta de medidas de seguridad

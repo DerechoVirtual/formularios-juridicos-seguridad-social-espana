@@ -1,6 +1,6 @@
 ---
 name: denuncia-ante-inspeccion-trabajo-representante-ss-059
-description: "Denuncia ante la Inspección de Trabajo de un representante de los trabajadores y sindical. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Denuncia ante la Inspección de Trabajo de un representante de los trabajadores y sindical. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Denuncia ante la Inspección de Trabajo de un representante de los trabajadores y sindical

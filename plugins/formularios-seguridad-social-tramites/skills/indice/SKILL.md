@@ -1,6 +1,6 @@
 ---
 name: indice
-description: "Índice de los 9 formularios de Seguridad Social: reclamaciones previas y recursos administrativos. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre."
+description: "Índice de los 9 formularios de Seguridad Social: reclamaciones previas y recursos administrativos. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre. Requiere Jurisprudenciator."
 ---
 
 # Seguridad Social: reclamaciones previas y recursos administrativos: índice de formularios

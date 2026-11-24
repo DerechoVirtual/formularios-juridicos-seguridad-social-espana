@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-resolucion-materia-prestacion-desempleo-ss-016
-description: "Demanda contra la resolución en materia de prestación por desempleo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra la resolución en materia de prestación por desempleo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra la resolución en materia de prestación por desempleo

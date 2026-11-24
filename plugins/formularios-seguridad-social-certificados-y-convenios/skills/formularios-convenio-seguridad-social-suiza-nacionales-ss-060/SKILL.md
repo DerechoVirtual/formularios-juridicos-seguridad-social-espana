@@ -1,6 +1,6 @@
 ---
 name: formularios-convenio-seguridad-social-suiza-nacionales-ss-060
-description: "Formularios del convenio de Seguridad Social con Suiza para nacionales de terceros países. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Formularios del convenio de Seguridad Social con Suiza para nacionales de terceros países. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Formularios del convenio de Seguridad Social con Suiza para nacionales de terceros países

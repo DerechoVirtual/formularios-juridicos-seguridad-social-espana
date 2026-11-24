@@ -1,6 +1,6 @@
 ---
 name: demanda-reclamacion-mejora-voluntaria-seguridad-social-ss-027
-description: "Demanda de reclamación de la mejora voluntaria de Seguridad Social pactada en convenio colectivo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de reclamación de la mejora voluntaria de Seguridad Social pactada en convenio colectivo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de reclamación de la mejora voluntaria de Seguridad Social pactada en convenio colectivo

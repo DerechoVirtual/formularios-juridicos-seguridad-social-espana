@@ -1,6 +1,6 @@
 ---
 name: certificado-federacion-deportiva-sobre-periodos-ss-049
-description: "Certificado de la federación deportiva sobre los periodos de actividad como deportista profesional. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Certificado de la federación deportiva sobre los periodos de actividad como deportista profesional. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Certificado de la federación deportiva sobre los periodos de actividad como deportista profesional

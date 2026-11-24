@@ -1,6 +1,6 @@
 ---
 name: alegaciones-acta-infraccion-seguridad-social-empresarios-ss-012
-description: "Alegaciones al acta de infracción de Seguridad Social a empresarios, formadores y autónomos. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Alegaciones al acta de infracción de Seguridad Social a empresarios, formadores y autónomos. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Alegaciones al acta de infracción de Seguridad Social a empresarios, formadores y autónomos

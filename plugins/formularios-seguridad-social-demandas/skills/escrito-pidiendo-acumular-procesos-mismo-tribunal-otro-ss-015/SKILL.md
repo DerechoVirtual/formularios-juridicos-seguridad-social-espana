@@ -1,6 +1,6 @@
 ---
 name: escrito-pidiendo-acumular-procesos-mismo-tribunal-otro-ss-015
-description: "Escrito pidiendo acumular procesos en el mismo tribunal o en otro. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Escrito pidiendo acumular procesos en el mismo tribunal o en otro. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Escrito pidiendo acumular procesos en el mismo tribunal o en otro

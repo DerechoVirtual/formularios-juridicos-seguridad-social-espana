@@ -1,6 +1,6 @@
 ---
 name: indice
-description: "Índice de los 16 formularios de Seguridad Social: certificados, declaraciones y convenios internacionales. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre."
+description: "Índice de los 16 formularios de Seguridad Social: certificados, declaraciones y convenios internacionales. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre. Requiere Jurisprudenciator."
 ---
 
 # Seguridad Social: certificados, declaraciones y convenios internacionales: índice de formularios

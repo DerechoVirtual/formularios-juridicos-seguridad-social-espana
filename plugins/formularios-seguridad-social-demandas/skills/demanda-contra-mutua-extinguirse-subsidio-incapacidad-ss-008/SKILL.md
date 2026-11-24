@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-mutua-extinguirse-subsidio-incapacidad-ss-008
-description: "Demanda contra la mutua por extinguirse el subsidio de incapacidad temporal por incomparecencia. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra la mutua por extinguirse el subsidio de incapacidad temporal por incomparecencia. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra la mutua por extinguirse el subsidio de incapacidad temporal por incomparecencia

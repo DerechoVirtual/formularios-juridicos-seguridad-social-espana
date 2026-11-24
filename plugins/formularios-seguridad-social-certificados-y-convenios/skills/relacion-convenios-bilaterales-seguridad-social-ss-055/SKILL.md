@@ -1,6 +1,6 @@
 ---
 name: relacion-convenios-bilaterales-seguridad-social-ss-055
-description: "Relación de convenios bilaterales de Seguridad Social suscritos por España con otros países. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Relación de convenios bilaterales de Seguridad Social suscritos por España con otros países. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Relación de convenios bilaterales de Seguridad Social suscritos por España con otros países

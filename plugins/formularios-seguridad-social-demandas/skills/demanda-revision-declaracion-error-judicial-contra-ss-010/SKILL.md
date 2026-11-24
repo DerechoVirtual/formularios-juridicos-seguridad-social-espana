@@ -1,6 +1,6 @@
 ---
 name: demanda-revision-declaracion-error-judicial-contra-ss-010
-description: "Demanda de revisión y de declaración de error judicial contra sentencia firme del orden social. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de revisión y de declaración de error judicial contra sentencia firme del orden social. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de revisión y de declaración de error judicial contra sentencia firme del orden social

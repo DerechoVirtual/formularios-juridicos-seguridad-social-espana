@@ -1,9 +1,10 @@
 {
   "name": "formularios-seguridad-social-demandas",
   "version": "1.0.0",
-  "description": "Seguridad Social: demandas y recursos ante lo social: 37 formularios revisados el 24-11-2026, cada uno convertido en una skill que lo rellena paso a paso. Para reclamar prestaciones ante la Sección de lo Social: demandas de incapacidad permanente e incapacidad temporal, altas médicas, desempleo, cese de actividad de autónomos, recargo de prestaciones, responsabilidad empresarial, mejoras voluntarias, recurso de suplicación y escritos de trámite. Requiere Jurisprudenciator.",
+  "description": "Seguridad Social: demandas y recursos ante lo social: 37 formularios revisados el 24-11-2026, cada uno convertido en una skill que lo rellena paso a paso. Para reclamar prestaciones ante la Sección de lo Social: demandas de incapacidad permanente e incapacidad temporal, altas médicas, desempleo, cese de actividad de autónomos, recargo de prestaciones, responsabilidad empresarial, mejoras voluntarias, recurso de suplicación y escritos de trámite. Requiere Jurisprudenciator conectado: sin él las skills no redactan ni verifican nada.",
   "author": {
-    "name": "Derecho Virtual"
+    "name": "Derecho Virtual",
+    "url": "https://jurisprudenciator.lexiaipro.org"
   },
   "displayName": "Seguridad Social: demandas y recursos ante lo social · España",
   "icon": "./.claude-plugin/icon.png",
@@ -19,5 +20,7 @@
     "modelos",
     "seguridad social",
     "ss-demandas"
-  ]
+  ],
+  "repository": "https://github.com/DerechoVirtual/formularios-juridicos-seguridad-social-espana",
+  "documentationUrl": "https://github.com/DerechoVirtual/formularios-juridicos-seguridad-social-espana/tree/main/plugins/formularios-seguridad-social-demandas"
 }

@@ -1,6 +1,6 @@
 ---
 name: solicitud-revision-sentencia-firme-ante-sala-lo-social-ss-036
-description: "Solicitud de revisión de sentencia firme ante la Sala de lo Social del Tribunal Supremo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Solicitud de revisión de sentencia firme ante la Sala de lo Social del Tribunal Supremo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Solicitud de revisión de sentencia firme ante la Sala de lo Social del Tribunal Supremo

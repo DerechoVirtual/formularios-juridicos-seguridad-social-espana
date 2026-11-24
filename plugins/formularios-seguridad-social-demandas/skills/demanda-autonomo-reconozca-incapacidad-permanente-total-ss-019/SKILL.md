@@ -1,6 +1,6 @@
 ---
 name: demanda-autonomo-reconozca-incapacidad-permanente-total-ss-019
-description: "Demanda de autónomo para que se reconozca incapacidad permanente total por enfermedad común. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda de autónomo para que se reconozca incapacidad permanente total por enfermedad común. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda de autónomo para que se reconozca incapacidad permanente total por enfermedad común

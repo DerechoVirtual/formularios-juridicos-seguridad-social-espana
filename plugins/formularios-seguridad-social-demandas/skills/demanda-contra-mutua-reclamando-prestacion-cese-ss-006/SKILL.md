@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-mutua-reclamando-prestacion-cese-ss-006
-description: "Demanda contra la mutua reclamando la prestación por cese de actividad de autónomos. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra la mutua reclamando la prestación por cese de actividad de autónomos. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra la mutua reclamando la prestación por cese de actividad de autónomos

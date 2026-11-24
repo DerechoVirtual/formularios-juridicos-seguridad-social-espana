@@ -1,6 +1,6 @@
 ---
 name: declaracion-jurada-autonomo-familiar-sobre-contratacion-ss-053
-description: "Declaración jurada del autónomo y su familiar sobre la contratación del familiar por cuenta ajena. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Declaración jurada del autónomo y su familiar sobre la contratación del familiar por cuenta ajena. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Declaración jurada del autónomo y su familiar sobre la contratación del familiar por cuenta ajena

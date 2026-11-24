@@ -1,6 +1,6 @@
 ---
 name: certificado-condicion-ministro-culto-evangelico-tiempo-ss-048
-description: "Certificado de condición de ministro de culto evangélico y tiempo de ejercicio en España. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Certificado de condición de ministro de culto evangélico y tiempo de ejercicio en España. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Certificado de condición de ministro de culto evangélico y tiempo de ejercicio en España

@@ -1,6 +1,6 @@
 ---
 name: prestacion-razon-necesidad-incapacidad-ancianidad-ss-043
-description: "Prestación por razón de necesidad por incapacidad o ancianidad para españoles de origen. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Prestación por razón de necesidad por incapacidad o ancianidad para españoles de origen. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Prestación por razón de necesidad por incapacidad o ancianidad para españoles de origen

@@ -1,6 +1,6 @@
 ---
 name: reclamacion-previa-denegacion-incapacidad-permanente-ss-045
-description: "Reclamación previa por denegación de incapacidad permanente total cualificada a un autónomo. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Reclamación previa por denegación de incapacidad permanente total cualificada a un autónomo. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Reclamación previa por denegación de incapacidad permanente total cualificada a un autónomo

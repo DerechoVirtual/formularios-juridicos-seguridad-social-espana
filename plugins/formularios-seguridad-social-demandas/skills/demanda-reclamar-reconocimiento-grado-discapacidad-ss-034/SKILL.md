@@ -1,6 +1,6 @@
 ---
 name: demanda-reclamar-reconocimiento-grado-discapacidad-ss-034
-description: "Demanda para reclamar el reconocimiento del grado de discapacidad. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda para reclamar el reconocimiento del grado de discapacidad. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda para reclamar el reconocimiento del grado de discapacidad

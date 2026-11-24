@@ -1,6 +1,6 @@
 ---
 name: indice
-description: "Índice de los 37 formularios de Seguridad Social: demandas y recursos ante lo social. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre."
+description: "Índice de los 37 formularios de Seguridad Social: demandas y recursos ante lo social. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre. Requiere Jurisprudenciator."
 ---
 
 # Seguridad Social: demandas y recursos ante lo social: índice de formularios

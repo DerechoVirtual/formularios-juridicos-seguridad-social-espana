@@ -1,6 +1,6 @@
 ---
 name: solicitud-audiencia-demandado-rebelde-art-185-lrjs-ss-031
-description: "Solicitud de audiencia al demandado rebelde (art. 185 LRJS). Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Solicitud de audiencia al demandado rebelde (art. 185 LRJS). Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Solicitud de audiencia al demandado rebelde (art. 185 LRJS)

@@ -1,6 +1,6 @@
 ---
 name: formularios-convenio-seguridad-social-turquia-ss-061
-description: "Formularios del convenio de Seguridad Social con Turquía para el desplazamiento de trabajadores. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Formularios del convenio de Seguridad Social con Turquía para el desplazamiento de trabajadores. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Formularios del convenio de Seguridad Social con Turquía para el desplazamiento de trabajadores

@@ -1,6 +1,6 @@
 ---
 name: demanda-contra-alta-medica-ss-029
-description: "Demanda contra el alta médica. Lo redacta con los datos del caso y comprueba las normas con Jurisprudenciator."
+description: "Demanda contra el alta médica. Lo redacta con los datos del caso y comprueba las normas en el BOE. Requiere Jurisprudenciator."
 ---
 
 # Demanda contra el alta médica
