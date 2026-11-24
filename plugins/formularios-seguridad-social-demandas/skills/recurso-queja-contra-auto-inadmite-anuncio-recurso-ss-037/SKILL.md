@@ -26,8 +26,8 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 ## Qué contiene esta skill
 
-- `formulario.md`: el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
-- `marco.md`: la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
+- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
 
@@ -49,8 +49,6 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 - art. 495 LEC
 - art. 189 LRJS
-
----
 
 ## Instrucciones para Claude
 
@@ -91,15 +89,67 @@ El plazo para su interposición es de 10 días desde la notificación de la reso
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee `formulario.md` entero y la parte de `marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea de `formulario.md` y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
    - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
+
+## Texto del formulario
+
+Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
+
+Procedimiento nº [Nº DE PROCEDIMIENTO]
+
+Recurso nº [Nº DE PROCEDIMIENTO]
+
+A LA SALA DE LO SOCIAL DEL TRIBUNAL SUPERIOR DE JUSTICIA DE:
+
+D./Dña. [NOMBRE Y APELLIDOS], Letrado/a y representante de D./Dña. [NOMBRE Y APELLIDOS], según consta acreditado en el proceso [Nº DE PROCEDIMIENTO], seguido ante [ÓRGANO] de los de [SEDE], a instancia de D./Dña. [NOMBRE Y APELLIDOS] contra [ACTO O RESOLUCIÓN] en reclamación por [OBJETO DE LA RECLAMACIÓN], ante esa Sala comparezco y como mejor proceda en derecho,
+
+DIGO
+
+Que, mediante el presente escrito y dentro del plazo [PLAZO] legalmente conferido por el artículo 495.3 de la Ley de Enjuiciamiento Civil, se INTERPONE RECURSO DE QUEJA contra el auto de fecha [FECHA] por el que se acuerda la inadmisión del recurso de suplicación anunciado por esta parte en las actuaciones de referencia y frente al auto de fecha [FECHA] por el que se desestima el recurso de reposición interpuesto frente al anterior. A tal efecto se alegan los siguientes
+
+ANTECEDENTES
+
+PRIMERO Con fecha [FECHA], recayó sentencia en el citado proceso, [SENTIDO DEL FALLO] de la demanda que fue notificada a esta parte el día [FECHA]
+
+SEGUNDO Frente a la anterior resolución, con fecha [FECHA] se anunció recurso de suplicación, designándose al/a la Letrado/a que suscribe para su interposición.
+
+TERCERO Por auto de fecha [FECHA], se tuvo por no anunciado el citado recurso por entender que [MOTIVO]. Se adjunta al presente escrito copia certificada del mencionado auto denegatorio, como preceptúa el art. 495 LECiv, aplicable a este supuesto por remisión expresa del art. 189 LRJS.
+
+CUARTO Esta parte interpuso el preceptivo recurso de reposición, preparatorio del presente Recurso de Queja, en escrito presentado el día [FECHA], que fue desestimado mediante auto de fecha
+
+QUINTO El día [FECHA] se entregaron a esta representación los testimonios de los citados autos.
+
+El recurso se basa en el siguiente
+
+MOTIVO
+
+ÚNICO. Considera esta parte que [MOTIVO].
+
+Por lo expuesto,
+
+SUPLICO A LA SALA Que, con admisión de este escrito, tenga por interpuesto, en tiempo y forma, recurso de queja, frente al auto de fecha [FECHA] de la Sala de lo Social del Tribunal de Instancia [SEDE] de los de [LOCALIDAD] denegatorio del anuncio del recurso de suplicación, y, estimando el mismo, se revoquen las resoluciones impugnadas, acordando la admisión a trámite del recurso de suplicación anunciado por esta parte y la puesta a disposición de los autos a este/a Letrado/a para su interposición.
+
+PRIMER OTROSÍ DIGO: Que señalo, para la práctica de las notificaciones relativas a este recurso, mi domicilio profesional sito en [LOCALIDAD], [DIRECCIÓN]
+
+SEGUNDO OTROSÍ DIGO: Que, conforme a lo dispuesto en el artículo 495.3 de la Ley de Enjuiciamiento Civil, por remisión del artículo 189 LRJS, acompaño, al presente escrito, testimonio del auto objeto de la presente impugnación y del que lo confirma, en el que consta la fecha de entrega de la misma a esta parte y poder notarial que acredita mi representación.
+
+TERCER OTROSÍ DIGO: que, de conformidad con lo dispuesto en los apartados 3.a) y 6 de la disposición adicional decimoquinta de la LOPJ acompaño a este escrito resguardo de consignación en la cuenta de Depósitos y Consignaciones abierta a nombre del Tribunal del depósito exigido para interponer el recurso por importe de 30 euros.
+
+Por lo que, SUPLICO que tenga por constituido el depósito, dejando interesada desde este momento su devolución para el caso de estimación total o parcial del recurso.
+
+SUPLICO: Se tengan por hechas las anteriores manifestaciones y por designado domicilio en la sede de esta Sala a efectos de notificaciones y por aportados los documentos referidos.
+
+Es Justicia que pido, en [LUGAR], a [FECHA].
+
+Fdo.: D./Dña. [NOMBRE Y APELLIDOS]

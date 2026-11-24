@@ -26,8 +26,8 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 ## Qué contiene esta skill
 
-- `formulario.md`: el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
-- `marco.md`: la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
+- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
 
@@ -51,8 +51,6 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 - art. 293 Ley Orgánica 6/1985
 - art. 6 Ley 1/2000
-
----
 
 ## Instrucciones para Claude
 
@@ -113,15 +111,81 @@ Actualizado según las modificaciones introducidas por la Ley Orgánica 1/2025, 
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee `formulario.md` entero y la parte de `marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea de `formulario.md` y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
    - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
+
+## Texto del formulario
+
+Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
+
+A LA SALA CUARTA, DE LO SOCIAL, DEL TRIBUNAL SUPREMO
+
+D./Dña. [NOMBRE Y APELLIDOS], Procurador/a de los Tribunales, según acredito mediante [ELEGIR: poder para pleitos / designación apud acta ante el/la Letrado/a de la Administración de Justicia en el momento en que se designe], con domicilio a efectos de notificaciones en [DOMICILIO A EFECTOS DE NOTIFICACIONES], en nombre y representación de [NOMBRE DEL REPRESENTADO/A], ante la Sala de lo Social del Tribunal Supremo comparezco y, como mejor proceda en Derecho, DIGO:
+
+Que, en la representación que me ha sido conferida y bajo la dirección letrada de D/Dña. [NOMBRE Y APELLIDOS] adscrito/a al Ilmo. Colegio de Abogados de [COLEGIO] con número de colegiado/a [Nº DE COLEGIADO/A], a través del presente escrito interpongo DEMANDA DE DECLARACIÓN DE ERROR JUDICIAL contra la sentencia número [Nº DE RESOLUCIÓN], en los autos número [Nº DE PROCEDIMIENTO], de fecha [FECHA], dictada por el [ÓRGANO O PERSONA].
+
+HECHOS
+
+PRIMERO.- Que mi representado/a ha sido parte [ELEGIR: actora / demandada] en el procedimiento [Nº DE PROCEDIMIENTO], tramitado ante el [ÓRGANO].
+
+SEGUNDO.- Que en el citado procedimiento fue dictada sentencia en fecha [FECHA], desestimando las pretensiones de esta parte.
+
+TERCERO.- Que la supracitada sentencia devino firme, al ser recurrida en tiempo y forma por esta parte por entender [MOTIVO], resultando desestimado finalmente el recurso mediante sentencia de fecha [FECHA].
+
+Acompaño copia de estas resoluciones como documentos números.
+
+CUARTO.- Que la última resolución adolece de un grave error judicial, por cuanto [MOTIVO].
+
+QUINTO.- Teniendo en cuenta el mencionado error, se ha producido un grave perjuicio patrimonial a los intereses de esta parte, que debe resarcirse mediante una indemnización a cargo del Estado, previa declaración judicial por causa de error, de acuerdo con el art. 293 de la Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial.
+
+Son de aplicación a los anteriores hechos los siguientes
+
+FUNDAMENTOS DE DERECHO
+
+PRIMERO.- La parte demandante se encuentra conveniente legitimada conforme a las reglas previstas en los artículos 16 y 17 de la Ley reguladora de la jurisdicción social, en concordancia con los artículos 6 y 7 de la Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil.
+
+SEGUNDO.- La solicitud de declaración se formula mediante Procurador/a debidamente habilitado y bajo la dirección letrada de Abogado, conforme faculta el artículo 21 de la Ley reguladora de la jurisdicción social.
+
+TERCERO.- Es competente para la tramitación del proceso de error judicial la Sala Cuarta, de lo Social, del Tribunal Supremo, de acuerdo con el artículo 236.2 de la Ley reguladora de la jurisdicción social y el artículo 293.1.b) de la Ley Orgánica del Poder Judicial, siguiéndose las reglas de los artículos 292 y siguientes de esta última norma.
+
+CUARTO.- De conformidad con el artículo 293.1 de la Ley Orgánica del Poder Judicial, la reclamación de indemnización por causa de error deberá ir precedida de una decisión judicial que expresamente lo reconozca. Esta previa decisión podrá resultar directamente de una sentencia dictada en virtud de recurso de revisión; del mismo modo, se obedece la prescripción de la letra a) del citado artículo, presentándose la acción judicial dentro del plazo máximo de tres meses a partir del día en que pudo ejercitarse, en este caso la notificación de la sentencia que adolece de error.
+
+QUINTO.- De acuerdo con el artículo 293.1.c) de la Ley Orgánica del Poder Judicial, deberán ser parte en el procedimiento el Ministerio Fiscal y la Administración del Estado.
+
+SEXTO.- Respecto del fondo del asunto, el artículo 292 de la Ley Orgánica del Poder Judicial expresa que los daños causados en cualesquiera bienes o derechos por error judicial, así como los que sean consecuencia del funcionamiento anormal de la Administración de Justicia, darán a todos los perjudicados derecho a una indemnización a cargo del estado, salvo en los casos de fuerza mayor.
+
+De acuerdo con el citado precepto, el daño producido a esta parte es efectivo, evaluable económicamente e individualizado.
+
+La jurisprudencia es clara en este sentido, y proclama el derecho a ser indemnizado por error judicial en [SUPUESTO DE ERROR JUDICIAL].
+
+El error judicial cometido por el Tribunal consistió en [LOCALIDAD].
+
+En cuanto al daño generado a esta parte, [DAÑO CAUSADO].
+
+Por lo expuesto,
+
+SUPLICO A LA SALA que, teniendo por presentado este escrito y sus documentos acompañatorios, se sirva admitirlo y, en su virtud, tenga por instada DEMANDA DE DECLARACIÓN DE ERROR JUDICIAL contra la sentencia número [Nº DE RESOLUCIÓN] en los autos número [Nº DE PROCEDIMIENTO], de fecha [FECHA], dictada por el [ÓRGANO O PERSONA] y, tras los trámites oportunos, declare la existencia de error judicial cometido por el citado órgano jurisdiccional.
+
+Es Justicia que pido en [LUGAR], a [FECHA].
+
+OTROSÍ DIGO: que acompaño justificante del depósito exigido, por realizarse los trámites bajo las reglas de la demanda de revisión (artículo 513.1 de la Ley de Enjuiciamiento Civil).
+
+SUPLICO A LA SALA: tenga por cumplido el referido trámite.
+
+SEGUNDO OTROSÍ DIGO: que intereso el recibimiento del pleito a prueba, aportando como prueba documental la que acompaña al cuerpo de este escrito, designando además los archivos de todas las instituciones, públicas y privadas, citadas en el mismo, y aun cuando no lo fueran.
+
+SUPLICO A LA SALA: tenga por realizada dicha manifestación a los efectos oportunos.
+
+Es Justicia que reitero en el lugar y fecha indicados ut supra.
+
+Firmado:

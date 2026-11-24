@@ -21,8 +21,6 @@ Ejemplos de petición:
 - «Recurso de alzada contra un acta de liquidación de cuotas»
 - «Alegaciones a un acta de infracción en materia de Seguridad Social»
 
----
-
 ## Instrucciones para Claude
 
 ### Paso 0: Jurisprudenciator en esta skill (obligatorio)
@@ -52,7 +50,7 @@ Busca por tipo de documento y por nombre. Cada formulario es una skill de este p
 
 ### Cómo usar el formulario elegido
 
-Invoca su skill. Si esa skill no aparece en tu lista de skills disponibles (puede pasar cuando hay muchas skills instaladas), lee directamente su fichero `SKILL.md`: está en la carpeta hermana de esta (`../<skill>/SKILL.md`). Síguelo igual que si la hubieras invocado, con su `formulario.md` y su `marco.md`.
+Invoca su skill. Si esa skill no aparece en tu lista de skills disponibles (puede pasar cuando hay muchas skills instaladas), lee directamente su fichero `SKILL.md`: está en la carpeta hermana de esta (`../<skill>/SKILL.md`). Síguelo igual que si la hubieras invocado: el formulario está al final de ese fichero y la guía del tema es el `marco.md` de esta carpeta.
 
 ### Demandas, peticiones y solicitudes iniciales (2)
 

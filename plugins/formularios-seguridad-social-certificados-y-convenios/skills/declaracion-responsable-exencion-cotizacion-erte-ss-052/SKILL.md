@@ -28,8 +28,8 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 ## Qué contiene esta skill
 
-- `formulario.md`: el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
-- `marco.md`: la guía del tema (Seguridad Social: certificados, declaraciones y convenios internacionales) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
+- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: certificados, declaraciones y convenios internacionales) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
 
@@ -45,8 +45,6 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 ## Normas que cita el formulario
 
 - No cita artículos concretos; Claude localizará las normas aplicables con Jurisprudenciator si el documento las necesita.
-
----
 
 ## Instrucciones para Claude
 
@@ -83,15 +81,72 @@ Las declaraciones responsables se deberán realizar, mediante la transmisión de
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee `formulario.md` entero y la parte de `marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea de `formulario.md` y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
    - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
+
+## Texto del formulario
+
+Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
+
+A LA DIRECCIÓN PROVINCIAL DE LA TGSS DE [PROVINCIA]
+
+D./Dña. [NOMBRE Y APELLIDOS], con domicilio en [LOCALIDAD], y provisto de NIF [NIF], en su propio nombre (o en nombre y representación de la mercantil [NOMBRE DEL REPRESENTADO/A], con NIF [NIF]), de conformidad con la Disposición Adicional Cuadragésima Cuarta de la Ley General de la Seguridad Social, DECLARO RESPONSABLEMENTE:
+
+Primero.- Que mi código de cuenta de cotización es [Nº DE CÓDIGO DE CUENTA DE COTIZACIÓN].
+
+Segundo.- Que solicito sean aplicadas las exenciones en la cotización previstas en la Disposición Adicional Cuadragésima Cuarta de la Ley General de la Seguridad Social, apartado 1, y a tal efecto vengo a comunicar que la empresa se encuentra en situación de ERTE por
+causas económicas
+causas técnicas
+causas organizativas
+causas de producción
+fuerza mayor temporal
+aplicación del Mecanismo RED de Flexibilidad y Estabilización del Empleo en su modalidad cíclica
+aplicación del Mecanismo RED de Flexibilidad y Estabilización del Empleo en su modalidad sectorial
+
+[ELEGIR UNA DE LAS ALTERNATIVAS QUE SIGUEN Y SUPRIMIR LAS DEMÁS]
+
+[NOMBRE Y APELLIDOS], que ha sido aprobado por Resolución de la [ÓRGANO ADMINISTRATIVO] de fecha [FECHA].
+
+que ha sido aprobado por silencio administrativo.
+
+Tercero.- Que se identifican en la presente las personas trabajadoras afectadas y la situación de suspensión o reducción de jornada en la que se encuentran.
+
+PLANTILLA ACTUAL:
+
+Trabajadores afectados:
+
+Suspensión de contratos:
+
+Reducción de jornada:
+
+NOMBRE	APELLIDOS	NIF	NAF	PERIODO DE REDUCCIÓN	PORCENTAJE DE REDUCCIÓN	PERIODO DE SUSPENSIÓN
+
+Cuarto.- Que esta declaración se presenta antes de que se solicite el cálculo de la liquidación de cuotas correspondiente al periodo de devengo de las primeras cuotas sobre las que va a tener efectos esta declaración.
+
+[OPCIONAL — incluir si procede]
+
+Para los supuestos a los que se refieren las letras a) y e) del apartado 1 de la Disp. Adic. 44ª LGSS
+
+Quinto.- Que, asimismo, DECLARO el compromiso de la empresa de realización de las acciones formativas a las que se refiere la Disposición Adicional Vigesimoquinta del Estatuto de los Trabajadores.
+
+Quinto
+Sexto
+ .- Que cumplo con los requisitos exigidos para la aplicación de las exenciones de cotización previstas en la Disposición Adicional Cuadragésima Cuarta de la Ley General de la Seguridad Social, y DECLARO conocer las consecuencias de la aplicación indebida de las mencionadas medidas de exención.
+
+Y para que conste, a los efectos oportunos, firmo la presente DECLARACIÓN RESPONSABLE
+
+En [LOCALIDAD].
+
+Fdo.:
+
+D./Dña. [NOMBRE Y APELLIDOS]

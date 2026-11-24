@@ -26,8 +26,8 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 ## Qué contiene esta skill
 
-- `formulario.md`: el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
-- `marco.md`: la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
+- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
 
@@ -45,8 +45,6 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 ## Normas que cita el formulario
 
 - No cita artículos concretos; Claude localizará las normas aplicables con Jurisprudenciator si el documento las necesita.
-
----
 
 ## Instrucciones para Claude
 
@@ -93,15 +91,39 @@ A pesar de encabezarse el presente escrito por abogado, no es preceptiva la asis
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee `formulario.md` entero y la parte de `marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea de `formulario.md` y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
    - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
+
+## Texto del formulario
+
+Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
+
+A LA SALA DE LO SOCIAL DEL TRIBUNAL SUPERIOR DE JUSTICIA DE [LOCALIDAD]
+
+D./Dña. [NOMBRE Y APELLIDOS], Letrado/a del Ilustre Colegio de [COLEGIO], en nombre y representación de D./Dña. [NOMBRE Y APELLIDOS], cuyos demás datos ya constan en autos nº [Nº DE PROCEDIMIENTO], recurso nº [Nº DE PROCEDIMIENTO] promovidos por mi mandante contra D./Dña. [NOMBRE Y APELLIDOS], en reclamación de [OBJETO DE LA RECLAMACIÓN], ante la Sala comparezco y como más procedente sea en Derecho, DIGO:
+
+Que en fecha [FECHA], se presentó por esta parte recurso de suplicación ante el Tribunal Superior de Justicia de [LOCALIDAD], a tenor de lo dispuesto en el artículo 190 de la Ley reguladora de la jurisdicción social, contra sentencia de fecha [FECHA] dictada por la Sección de lo Social del Tribunal de Instancia nº [NÚMERO] de [LOCALIDAD], por no estar conformes con la misma por las siguientes razones:
+
+[MOTIVO]
+
+Que el anterior recurso de suplicación fue impugnado por la parte recurrida el día [FECHA]. Ambos escritos, así como los autos reseñados en el encabezamiento de este escrito se elevaron para su examen y posterior resolución ante la Sala a la que tengo el honor de dirigirme en fecha [FECHA].
+
+Que asimismo, el día [FECHA] de los corrientes, se elevaron ante la misma Sala los autos nº [Nº DE PROCEDIMIENTO], tramitados por la Sección de lo Social del Tribunal de Instancia nº [NÚMERO] y el recurso de suplicación presentado por D./Dña. [NOMBRE Y APELLIDOS] contra la misma parte demandada en las actuaciones promovidas por mi patrocinado, es decir, contra D./Dña. [NOMBRE Y APELLIDOS].
+
+Que existiendo identidad de objeto y de parte demandada, conforme a lo preceptuado en los artículos 33 y 234 de la Ley reguladora de la jurisdicción social, es por lo que interesa a esta parte la acumulación de los mencionados recursos referenciados, a fin de que en su día se discutan conjuntamente y se resuelvan en una sola resolución todas las cuestiones y pedimentos planteados.
+
+En su virtud,
+
+SUPLICO A LA SALA DE LO SOCIAL que, habiendo por presentado este escrito con sus copias en tiempo y forma legal, acuerde tener formulada la anterior petición, y previa audiencia de los comparecidos, acuerde la acumulación de los recursos números [Nº] y [Nº], para que en su día, recaiga sentencia unificada sobre todas las cuestiones planteadas.
+
+Es justicia que se solicita en [LUGAR], a [FECHA].

@@ -28,8 +28,8 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 ## Qué contiene esta skill
 
-- `formulario.md`: el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
-- `marco.md`: la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
+- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
 
@@ -54,8 +54,6 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 - art. 28 LRJS
 - art. 30.1 LRJS
 - art. 29 LRJS
-
----
 
 ## Instrucciones para Claude
 
@@ -102,15 +100,55 @@ Asimismo, se acumularán los procesos que tengan su origen en un mismo accidente
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee `formulario.md` entero y la parte de `marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea de `formulario.md` y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
    - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
+
+## Texto del formulario
+
+Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
+
+PROCEDIMIENTO N.º [N.º DE PROCEDIMIENTO]
+
+A LA SECCIÓN DE LO SOCIAL DEL TRIBUNAL DE INSTANCIA DE [SEDE], PLAZA NÚMERO [N.º DE PLAZA]
+
+D./Dña. [NOMBRE Y APELLIDOS DEL LETRADO/A], Letrado/a del Ilustre Colegio de Abogados de [LOCALIDAD], en nombre y representación de D./Dña. [NOMBRE Y APELLIDOS DEL DEMANDANTE], cuyos demás datos ya constan en autos n.º [N.º DE PROCEDIMIENTO] promovidos por mi mandante contra [NOMBRE Y APELLIDOS DEL DEMANDADO/A O DENOMINACIÓN SOCIAL DE LA EMPRESA], en reclamación de [DESCRIPCIÓN DE LA RECLAMACIÓN], ante esa Sección de lo Social del Tribunal de Instancia comparece y, como mejor proceda en Derecho,
+
+DICE:
+
+Que en fecha [FECHA] se ha notificado a esta parte citación para los actos de conciliación y juicio, a celebrar el día [DÍA, MES Y AÑO] a las [HORA] horas.
+
+[ELEGIR UNA DE ESTAS ALTERNATIVAS Y SUPRIMIR LAS DEMÁS:]
+
+— (Procesos ante el mismo tribunal) Que, en este mismo Tribunal al que tengo el honor de dirigirme, se tramitan, además de los reseñados al margen, otro procedimiento iniciado por D./Dña. [NOMBRE Y APELLIDOS DEL DEMANDANTE] contra la misma parte demandada, procedimiento n.º [N.º DE PROCEDIMIENTO], sobre [DESCRIPCIÓN DE LA RECLAMACIÓN], con lo que, tratándose del mismo objeto y materia, a tenor de lo previsto en el art. 28 LRJS [ELEGIR: o, existiendo tal conexión entre los objetos de los procesos que, de seguirse por separado, pudieran dictarse sentencias con pronunciamientos o fundamentos contradictorios, incompatibles o excluyentes, a tenor de lo previsto en el art. 30.1 LRJS],
+
+— (Procesos ante distintos tribunales) Que hemos podido conocer que se sigue la tramitación del procedimiento n.º [N.º DE PROCEDIMIENTO] en la Sección de lo Social del Tribunal de Instancia de [SEDE], plaza n.º [N.º DE PLAZA], de esta misma circunscripción, iniciado por D./Dña. [NOMBRE Y APELLIDOS DEL DEMANDANTE] contra el mismo demandado y sobre reclamación de [DESCRIPCIÓN DE LA RECLAMACIÓN], con lo que, tratándose de acciones idénticas, a tenor de lo previsto en el art. 29 LRJS [ELEGIR: o, existiendo tal conexión entre los objetos de los procesos que, de seguirse por separado, pudieran dictarse sentencias con pronunciamientos o fundamentos contradictorios, incompatibles o excluyentes, a tenor de lo previsto en el art. 30.1 LRJS],
+
+es por lo que interesa a esta parte la acumulación de ambas actuaciones referenciadas, a fin de que en su día se dicte una única sentencia que resuelva los pedimentos de las dos demandas.
+
+Que, conforme a lo establecido preceptivamente, la presente solicitud se formula ante el órgano judicial que conoce de la demanda que ha tenido entrada anteriormente en el Registro.
+
+En su virtud,
+
+SUPLICO A LA SECCIÓN DE LO SOCIAL DEL TRIBUNAL DE INSTANCIA que, habiendo por presentado este escrito con su copia en tiempo y forma legal, acuerde tener formulada la anterior petición y, previos los trámites legales oportunos, acuerde la acumulación
+
+[ELEGIR UNA DE ESTAS ALTERNATIVAS Y SUPRIMIR LAS DEMÁS:]
+
+— del proceso n.º [N.º DE PROCEDIMIENTO] al n.º [N.º DE PROCEDIMIENTO], seguidos ambos ante el Tribunal al que me dirijo,
+
+— del proceso n.º [N.º DE PROCEDIMIENTO], seguido ante la Sección de lo Social del Tribunal de Instancia de [SEDE], plaza n.º [N.º DE PLAZA], al presente proceso; y, en consecuencia, se dirija oficio al citado órgano judicial, al objeto de que se remitan las actuaciones en el plazo más breve posible,
+
+fije fecha para los actos de conciliación y juicio y, en su día, recaiga sentencia unificada sobre todas las cuestiones planteadas.
+
+Es de Justicia que se solicita en [LUGAR], a [DÍA] de [MES] de [AÑO].
+
+D./Dña. [NOMBRE Y APELLIDOS DEL LETRADO/A, O DEL RECLAMANTE SI ES QUIEN ENCABEZA LA SOLICITUD]

@@ -28,8 +28,8 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 
 ## Qué contiene esta skill
 
-- `formulario.md`: el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
-- `marco.md`: la guía del tema (Seguridad Social: certificados, declaraciones y convenios internacionales) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
+- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: certificados, declaraciones y convenios internacionales) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
 
@@ -54,8 +54,6 @@ Si no estás seguro de que este sea el formulario que necesitas, usa el índice 
 ## Normas que cita el formulario
 
 - No cita artículos concretos; Claude localizará las normas aplicables con Jurisprudenciator si el documento las necesita.
-
----
 
 ## Instrucciones para Claude
 
@@ -91,15 +89,75 @@ Cita solo lo que devuelva Jurisprudenciator (artículo vigente, ECLI o ROJ, dato
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee `formulario.md` entero y la parte de `marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea de `formulario.md` y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
    - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
+
+## Texto del formulario
+
+Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
+
+1. QUÉ SON ESTOS FORMULARIOS
+
+Son los impresos oficiales que utilizan las instituciones de Seguridad Social de los países vinculados por un convenio bilateral o instrumento de coordinación para tramitar, entre sí, las solicitudes de pensiones y otras prestaciones, certificar períodos de cotización o de seguro y determinar la legislación de Seguridad Social aplicable a trabajadores desplazados. En este caso, los formularios se refieren a las islas de Man o de Jersey.
+
+2. ANTE QUIÉN SE PRESENTA
+
+— Prestaciones y pensiones (jubilación, incapacidad, viudedad, orfandad): ante el Instituto Nacional de la Seguridad Social (INSS), en el Centro de Atención e Información de la Seguridad Social (CAISS) correspondiente al domicilio del interesado, o por la sede electrónica de la Seguridad Social (sede.seg-social.gob.es) con certificado electrónico, Cl@ve o mediante cita previa.
+
+— Legislación aplicable, desplazamientos temporales de trabajadores y certificados de cotización: ante la Tesorería General de la Seguridad Social (TGSS), a través de la sede electrónica o de la Administración de la Seguridad Social que corresponda a la empresa o al trabajador.
+
+— Si el interesado reside en la isla de Man o en Jersey, la solicitud puede presentarse ante la institución competente de la isla, que la remitirá a la institución española.
+
+3. DATOS Y DOCUMENTOS QUE SE SUELEN EXIGIR
+
+— Datos de identificación: nombre y apellidos, fecha y lugar de nacimiento, nacionalidad, número de afiliación a la Seguridad Social española y número de seguro de la isla, domicilio, correo electrónico y teléfono.
+
+— Documento de identidad (DNI, NIE o pasaporte) y, en su caso, documentos del cónyuge y de los hijos.
+
+— Historial laboral: empresas, períodos trabajados o asegurados en España y en la isla, categorías y bases de cotización, si se dispone de ellos.
+
+— Para trabajadores desplazados: contrato, datos de la empresa y duración prevista del desplazamiento.
+
+— Documentos médicos si se solicita una prestación por incapacidad.
+
+— Datos bancarios para el abono de la prestación (IBAN de la cuenta del interesado).
+
+— Traducción de los documentos extranjeros cuando así se exija.
+
+4. NORMATIVA APLICABLE
+
+— Texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto Legislativo 8/2015, de 30 de octubre.
+
+— Convenio o instrumento internacional de Seguridad Social aplicable entre España y el Reino Unido y sus dependencias de la Corona (Man y Jersey), y normas de desarrollo [COMPROBAR EN LA SEDE ELECTRÓNICA DE LA SEGURIDAD SOCIAL LA REFERENCIA EXACTA DEL INSTRUMENTO VIGENTE].
+
+— Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 (LOPDGDD), en cuanto al tratamiento de los datos personales.
+
+5. MODELO BREVE DE SOLICITUD
+
+AL INSTITUTO NACIONAL DE LA SEGURIDAD SOCIAL, DIRECCIÓN PROVINCIAL DE [PROVINCIA]
+
+D./Dña. [NOMBRE Y APELLIDOS], con [DNI/NIE], número de afiliación a la Seguridad Social [Nº DE AFILIACIÓN], con domicilio en [DOMICILIO], [LOCALIDAD], [PROVINCIA], teléfono [TELÉFONO] y correo electrónico [CORREO ELECTRÓNICO], ante esa Dirección Provincial comparezco y, como mejor proceda, EXPONGO:
+
+PRIMERO.– Que he trabajado y/o cotizado o estado asegurado en [ELEGIR: la isla de Man / la isla de Jersey] durante el período comprendido entre el [FECHA] y el [FECHA], con el número de seguro [Nº DE SEGURO EN LA ISLA], y en España durante el período comprendido entre el [FECHA] y el [FECHA].
+
+SEGUNDO.– Que solicito la aplicación del convenio o instrumento de coordinación de Seguridad Social vigente entre España y [ELEGIR: la isla de Man / la isla de Jersey], a efectos de [ELEGIR: reconocimiento de la pensión de [CLASE DE PENSIÓN] / totalización de períodos de cotización / certificación de la legislación aplicable / otra: [ESPECIFICAR]].
+
+TERCERO.– Que acompaño los documentos siguientes: [RELACIÓN DE DOCUMENTOS].
+
+Por lo expuesto,
+
+SOLICITO que se tenga por presentada esta solicitud, con los documentos que se acompañan, se tramite conforme al convenio o instrumento aplicable, se remita en su caso a la institución competente de la isla y se me comunique la resolución que recaiga.
+
+En [LOCALIDAD], a [DÍA] de [MES] de [AÑO].
+
+Firma: [FIRMA]
