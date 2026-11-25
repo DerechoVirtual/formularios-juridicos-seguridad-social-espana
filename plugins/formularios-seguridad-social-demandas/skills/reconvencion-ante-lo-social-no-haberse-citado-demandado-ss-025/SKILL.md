@@ -5,7 +5,7 @@ description: "Reconvención ante lo Social por no haberse citado al demandado a 
 
 # Reconvención ante lo Social por no haberse citado al demandado a la conciliación previa en el SMAC
 
-> Formulario **SS-025** del plugin **Seguridad Social: demandas y recursos ante lo social** (`formularios-seguridad-social-demandas`) · Seguridad Social › Demandas y escritos ante la jurisdicción social · normativa revisada el 24-11-2026.
+> Formulario **SS-025** del plugin **Seguridad Social: demandas y recursos ante lo social** (`formularios-seguridad-social-demandas`) · Seguridad Social › Demandas y escritos ante la jurisdicción social · normativa revisada el 25-11-2026.
 
 ## Qué es
 
@@ -22,13 +22,14 @@ Para obtener, en pocos minutos, un borrador completo de «Reconvención ante lo 
 1. **Pídelo con tus palabras**, por ejemplo: «Prepárame el documento “Reconvención ante lo Social por no haberse citado al demandado a la conciliación previa en el SMAC” para mi caso». También puedes invocarla directamente con `/formularios-seguridad-social-demandas:reconvencion-ante-lo-social-no-haberse-citado-demandado-ss-025`.
 2. **Dale los datos del caso** cuando te los pida (abajo tienes la lista para tenerlos a mano). Lo que no sepas queda como hueco visible.
 3. **Resuelve las opciones** que te plantee (las marcadas [ELEGIR] y [OPCIONAL] en el modelo).
-4. **Recibe el documento en Word, tal cual es el formulario**: empieza por su primera línea (por ejemplo «En [LOCALIDAD], a [FECHA]» o «A LA SECCIÓN…»), sin títulos ni notas añadidas, en Times New Roman 12, interlineado 1,15 y texto justificado. Lo pendiente, las normas comprobadas y el plazo te los dice en el chat.
+4. **Recibe el documento en Word, tal cual es el formulario**: empieza por su primera línea (por ejemplo «En [LOCALIDAD], a [FECHA]» o «A LA SECCIÓN…»), sin títulos ni notas añadidas, en Times New Roman 11, interlineado 1,15 y texto justificado. Lo pendiente, las normas comprobadas y el plazo te los dice en el chat.
 
 Si no estás seguro de que este sea el formulario que necesitas, usa el índice del plugin: `/formularios-seguridad-social-demandas:indice`.
 
 ## Qué contiene esta skill
 
-- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `SKILL.md` (este fichero): qué es el formulario, para qué sirve, cómo se usa, los datos que pide, las normas que cita, los avisos de actualización y las instrucciones para Claude.
+- `assets/formulario.md`: el formulario seco, tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…]. Es el texto que se rellena; no lleva explicaciones.
 - `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
@@ -97,53 +98,15 @@ NOTA PREVIA (suprimir antes de presentar): Únicamente se podrá formular reconv
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero `assets/formulario.md` (el formulario que vas a rellenar, en la carpeta de esta skill) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea de `assets/formulario.md` y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
-   - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
+   - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 11 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
-
-## Texto del formulario
-
-Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
-
-Procedimiento n.º [Nº DE PROCEDIMIENTO]
-
-A LA SECCIÓN DE LO SOCIAL DEL TRIBUNAL DE INSTANCIA DE [SEDE], PLAZA N.º [Nº]
-
-D./Dña. [NOMBRE Y APELLIDOS DEL LETRADO/A], Letrado/a del Ilustre Colegio de Abogados de [LOCALIDAD], con el número de colegiado/a [Nº DE COLEGIADO], en nombre y representación de D./Dña. [NOMBRE Y APELLIDOS DEL REPRESENTADO], según se acredita mediante escritura de poder que a este escrito se acompaña como DOC. Nº 1, y con domicilio en su despacho sito en [DOMICILIO PROFESIONAL], teléfono [TELÉFONO] y correo electrónico [CORREO ELECTRÓNICO], ante este Tribunal comparezco y, como mejor proceda en Derecho, DIGO:
-
-PRIMERO.– Que con fecha [FECHA] se ha notificado a mi representado/a decreto de admisión de la demanda planteada por [NOMBRE DEL DEMANDANTE] en materia de reclamación de cantidad, procedimiento ordinario n.º [Nº DE PROCEDIMIENTO], citando a las partes para la celebración de conciliación y, en su caso, juicio el próximo día [FECHA], a las [HORA]. En la demanda planteada la parte actora, [NOMBRE DEL DEMANDANTE], reclama a mi representado/a la cantidad de [IMPORTE] euros en concepto de [CONCEPTO].
-
-SEGUNDO.– Que en el procedimiento de referencia, si bien la parte actora cumplió con el requisito previo de intento de conciliación, tal y como se acredita con la certificación aportada con la demanda, el acto de conciliación, como así se certifica por el servicio de mediación, arbitraje y conciliación de [LOCALIDAD], no se celebró, no citando, en consecuencia, a mi representado/a, por lo que esta parte no ha tenido oportunidad de anunciar en dicho trámite, en la forma prevista en el art. 85.3 de la LRJS, su intención de plantear demanda de reconvención contra la actora.
-
-TERCERO.– Por dicho motivo, por medio del presente escrito vengo a interponer DEMANDA DE RECONVENCIÓN contra [NOMBRE DEL DEMANDANTE], en solicitud del pronunciamiento que en el suplico se concretará, y siguiendo las pautas establecidas en el art. 406, por remisión del art. 438.2, ambos de la LEC, y arts. 25 y concordantes de la LRJS.
-
-Se basa la presente demanda de reconvención en los siguientes
-
-HECHOS
-
-PRIMERO.– D./Dña. [NOMBRE Y APELLIDOS DEL REPRESENTADO] trabajó para [NOMBRE O DENOMINACIÓN SOCIAL DEL DEMANDANTE] desde el [FECHA] hasta el [FECHA], realizando las funciones de [FUNCIONES], incluido/a en el Grupo Profesional [GRUPO PROFESIONAL] del Convenio Colectivo de [CONVENIO COLECTIVO] y con un salario de [IMPORTE].
-
-SEGUNDO.– [DESARROLLAR LOS HECHOS SOBRE LAS CANTIDADES DEBIDAS, SU ORIGEN, CONCEPTO, ETC.]
-
-TERCERO.– Por todo lo anterior, no habiéndole abonado ninguna cantidad en concepto de [CONCEPTO], la parte demandante le adeuda a mi representado/a la cantidad de [IMPORTE] euros, importe que se reclama en esta demanda reconvencional.
-
-CUARTO.– El órgano judicial ante el que se presenta esta demanda es competente por estar conociendo de la demanda principal. Asimismo, la acción que se ejercita tiene que ventilarse en la misma modalidad procesal que la demanda principal y las acciones son acumulables. Asimismo, existe conexión entre las pretensiones de esta demanda de reconvención y las que son objeto de la demanda principal.
-
-QUINTO.– Establece el art. 59.2 del Estatuto de los Trabajadores, texto refundido aprobado por Real Decreto Legislativo 2/2015, de 23 de octubre, que si la acción se ejercita para exigir percepciones económicas o para el cumplimiento de obligaciones de tracto único que no puedan tener lugar después de extinguido el contrato, el plazo de un año se computará desde el día en que la acción pudiera ejercitarse. El «dies a quo» para plantear la acción reconvencional que se plantea es el [FECHA], fecha límite que tenía la parte demandante para abonar las cantidades debidas, por lo tanto se ejercita dentro del plazo de un año.
-
-Por lo expuesto,
-
-SUPLICO A LA SECCIÓN DE LO SOCIAL DEL TRIBUNAL DE INSTANCIA que, teniendo por presentado este escrito con los documentos que se acompañan, admita la demanda de reconvención planteada por mi representado/a y, tras los trámites oportunos, dicte en su día sentencia por la que se estime la referida acción reconvencional, condenando a [NOMBRE DEL DEMANDANTE] al pago a mi mandante de la suma reclamada como principal, que asciende a [IMPORTE] euros, más el 10 % de interés por mora.
-
-Por ser de Justicia que solicito en [LOCALIDAD], a [DÍA] de [MES] de [AÑO].
-
-Firma del Letrado/a: [NOMBRE Y APELLIDOS DEL LETRADO/A]

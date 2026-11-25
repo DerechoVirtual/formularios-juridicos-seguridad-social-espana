@@ -1,22 +1,22 @@
 # Seguridad Social: demandas y recursos ante lo social
 
-> Plugin de Claude Code `formularios-seguridad-social-demandas` · **37 formularios** · Seguridad Social · normativa revisada el 24-11-2026 · requiere Jurisprudenciator
+> Plugin de Claude Code `formularios-seguridad-social-demandas` · **68 formularios** · Seguridad Social · normativa revisada el 25-11-2026 · requiere Jurisprudenciator
 
 ## Para qué sirve
 
 Para reclamar prestaciones ante la Sección de lo Social: demandas de incapacidad permanente e incapacidad temporal, altas médicas, desempleo, cese de actividad de autónomos, recargo de prestaciones, responsabilidad empresarial, mejoras voluntarias, recurso de suplicación y escritos de trámite.
 
-Cada formulario es una skill: Claude lo rellena contigo paso a paso y te entrega el documento en Word, con las normas comprobadas en el BOE. Cada skill explica en su `SKILL.md` qué es el formulario, para qué sirve, cómo se usa, qué datos necesita y qué avisos normativos lleva.
+Cada formulario es una skill: Claude lo rellena contigo paso a paso y te entrega el documento en Word, con las normas comprobadas en el BOE. Cada skill explica en su `SKILL.md` qué es el formulario, para qué sirve, cómo se usa, qué datos necesita y qué avisos normativos lleva; el formulario seco, listo para rellenar, está en `assets/formulario.md` dentro de la carpeta de la skill.
 
 ## Qué puedes hacer con él
 
-Estos son los tipos de documento que trae, con algunos ejemplos (la lista completa de los 37 está al final):
+Estos son los tipos de documento que trae, con algunos ejemplos (la lista completa de los 68 está al final):
 
-- **Demandas, peticiones y solicitudes iniciales** (25). Por ejemplo: Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor en Ceuta (julio de 2026); Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor (incendios forestales); Demanda contra el INSS que impugna la devolución de la prestación de cese de actividad (COVID-19).
+- **Demandas, peticiones y solicitudes iniciales** (54). Por ejemplo: Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor en Ceuta (julio de 2026); Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor (incendios forestales); Demanda contra el INSS que impugna la devolución de la prestación de cese de actividad (COVID-19).
 - **Contestaciones, oposiciones y alegaciones** (2). Por ejemplo: Alegaciones al acta de infracción de Seguridad Social a empresarios, formadores y autónomos; Reconvención ante lo Social por no haberse citado al demandado a la conciliación previa en el SMAC.
 - **Recursos** (1). Por ejemplo: Recurso de queja contra el auto que inadmite el anuncio del recurso de suplicación.
 - **Comunicaciones, requerimientos y cartas** (2). Por ejemplo: Solicitud de audiencia al demandado rebelde (art. 185 LRJS); Solicitud de revisión de sentencia firme ante la Sala de lo Social del Tribunal Supremo.
-- **Escritos de trámite y otros** (7). Por ejemplo: Escrito de formalización del recurso de suplicación; Escrito pidiendo acumular procesos en el mismo tribunal o en otro; Incidente de nulidad de la providencia que confirma el decreto que termina el monitorio.
+- **Escritos de trámite y otros** (9). Por ejemplo: Escrito de formalización del recurso de suplicación; Escrito pidiendo acumular procesos en el mismo tribunal o en otro; Incidente de nulidad de la providencia que confirma el decreto que termina el monitorio.
 
 ## Cómo se usa
 
@@ -32,9 +32,9 @@ Estos son los tipos de documento que trae, con algunos ejemplos (la lista comple
 1. Comprueba que Jurisprudenciator está conectado. Si no lo está, se para y te dice cómo conectarlo: no redacta nada sin él. Todos los datos jurídicos del documento (artículos vigentes, sentencias con su ECLI, datos registrales) salen de Jurisprudenciator; nunca de memoria.
 2. Te pide en una sola tanda los datos del caso (partes, órgano, fechas, importes…). Lo que no sepas queda como hueco visible.
 3. Resuelve contigo las opciones que el formulario deja abiertas y decide qué párrafos opcionales entran según los hechos.
-4. Aplica las notas de actualización de la revisión del 24-11-2026 (reformas legales, órganos judiciales de la LO 1/2025, plazos).
+4. Aplica las notas de actualización de la revisión del 25-11-2026 (reformas legales, órganos judiciales de la LO 1/2025, plazos).
 5. Comprueba en el BOE, con Jurisprudenciator, cada norma que cita el documento; si alguna ha cambiado, usa la redacción vigente y te lo dice.
-6. Te entrega el documento en Word **tal cual es el formulario**: empieza por su primera línea, sin títulos, notas ni explicaciones añadidas, en Times New Roman 12, interlineado 1,15 y texto justificado. En el chat te dice lo que queda pendiente y, si es un escrito, el plazo y ante quién se presenta.
+6. Te entrega el documento en Word **tal cual es el formulario**: empieza por su primera línea, sin títulos, notas ni explicaciones añadidas, en Times New Roman 11, interlineado 1,15 y texto justificado. En el chat te dice lo que queda pendiente y, si es un escrito, el plazo y ante quién se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
 
@@ -42,7 +42,7 @@ El resultado es un borrador para que lo revise un profesional antes de usarlo.
 
 - **Dónde funciona:** en Claude Code y en Claude (web, escritorio y Cowork). Se instala desde este repositorio de GitHub o subiendo el ZIP del plugin.
 - **Jurisprudenciator es imprescindible:** el plugin trae el conector y cada skill trabaja siempre con él. Sin una cuenta de Jurisprudenciator conectada, las skills se paran y no redactan nada. La primera vez hay que iniciar sesión (en Claude Code, con `/mcp`; o con tu URL personal: https://jurisprudenciator.lexiaipro.org/instalacion). Si ya tienes Jurisprudenciator conectado en Claude, las skills usan ese.
-- **Espacio que ocupa:** unos 2.285 tokens en cada conversación mientras esté activado, porque Claude lleva en memoria la descripción de cada skill. Activa solo los plugins que vayas a usar; los demás puedes desactivarlos sin desinstalarlos (`claude plugin disable formularios-seguridad-social-demandas@formularios-juridicos-seguridad-social-espana`).
+- **Espacio que ocupa:** unos 4.142 tokens en cada conversación mientras esté activado, porque Claude lleva en memoria la descripción de cada skill. Activa solo los plugins que vayas a usar; los demás puedes desactivarlos sin desinstalarlos (`claude plugin disable formularios-seguridad-social-demandas@formularios-juridicos-seguridad-social-espana`).
 
 ## Instalación
 
@@ -57,7 +57,7 @@ En Claude (web, escritorio o Cowork): **Personalizar → Plugins → Añadir mar
 
 Para comprobar que está instalado: `claude plugin list`.
 
-## Lista completa de formularios (37)
+## Lista completa de formularios (68)
 
 | Código | Formulario | Skill |
 |---|---|---|
@@ -68,7 +68,6 @@ Para comprobar que está instalado: `claude plugin list`.
 | SS-005 | Demanda contra la mutua por cese de actividad de autónomos por fuerza mayor debido a la DANA de 2024 | `demanda-contra-mutua-cese-actividad-autonomos-fuerza-ss-005` |
 | SS-006 | Demanda contra la mutua reclamando la prestación por cese de actividad de autónomos | `demanda-contra-mutua-reclamando-prestacion-cese-ss-006` |
 | SS-007 | Demanda de la empresa contra la persona trabajadora para reclamar una cantidad adeudada | `demanda-empresa-contra-persona-trabajadora-reclamar-ss-007` |
-| SS-008 | Demanda contra la mutua por extinguirse el subsidio de incapacidad temporal por incomparecencia | `demanda-contra-mutua-extinguirse-subsidio-incapacidad-ss-008` |
 | SS-009 | Demanda para reclamar prestaciones de la Seguridad Social (reintegro de gastos médicos y otras) | `demanda-reclamar-prestaciones-seguridad-social-reintegro-ss-009` |
 | SS-010 | Demanda de revisión y de declaración de error judicial contra sentencia firme del orden social | `demanda-revision-declaracion-error-judicial-contra-ss-010` |
 | SS-011 | Demanda de la empresa contra la responsabilidad de pago de la pensión por contrato de relevo | `demanda-empresa-contra-responsabilidad-pago-pension-ss-011` |
@@ -79,8 +78,6 @@ Para comprobar que está instalado: `claude plugin list`.
 | SS-016 | Demanda contra la resolución en materia de prestación por desempleo | `demanda-contra-resolucion-materia-prestacion-desempleo-ss-016` |
 | SS-017 | Demanda de reclamación de cantidades indebidamente ingresadas a la Seguridad Social | `demanda-reclamacion-cantidades-indebidamente-ingresadas-ss-017` |
 | SS-018 | Demanda contra la extinción de la prestación o subsidio de desempleo por traslado al extranjero | `demanda-contra-extincion-prestacion-subsidio-desempleo-ss-018` |
-| SS-019 | Demanda de autónomo para que se reconozca incapacidad permanente total por enfermedad común | `demanda-autonomo-reconozca-incapacidad-permanente-total-ss-019` |
-| SS-020 | Demanda de reconocimiento de incapacidad permanente total | `demanda-reconocimiento-incapacidad-permanente-total-ss-020` |
 | SS-021 | Demanda de reconocimiento de incapacidad permanente parcial | `demanda-reconocimiento-incapacidad-permanente-parcial-ss-021` |
 | SS-022 | Demanda de reconocimiento de la prestación por desempleo | `demanda-reconocimiento-prestacion-desempleo-ss-022` |
 | SS-023 | Incidente de nulidad de la providencia que confirma el decreto que termina el monitorio | `incidente-nulidad-providencia-confirma-decreto-termina-ss-023` |
@@ -98,6 +95,40 @@ Para comprobar que está instalado: `claude plugin list`.
 | SS-035 | Petición de acumulación de recursos de suplicación (art. 234 LRJS) | `peticion-acumulacion-recursos-suplicacion-art-234-lrjs-ss-035` |
 | SS-036 | Solicitud de revisión de sentencia firme ante la Sala de lo Social del Tribunal Supremo | `solicitud-revision-sentencia-firme-ante-sala-lo-social-ss-036` |
 | SS-037 | Recurso de queja contra el auto que inadmite el anuncio del recurso de suplicación | `recurso-queja-contra-auto-inadmite-anuncio-recurso-ss-037` |
+| SS-063 | Demanda del trabajador extranjero contra la declaración de cobro indebido del desempleo | `demanda-trabajador-extranjero-contra-declaracion-cobro-ss-063` |
+| SS-064 | Demanda contra la sanción que extingue la prestación o el subsidio por desempleo | `demanda-contra-sancion-extingue-prestacion-subsidio-ss-064` |
+| SS-065 | Demanda reclamando el subsidio de desempleo para mayores de 52 años | `demanda-reclamando-subsidio-desempleo-mayores-52-anos-ss-065` |
+| SS-066 | Demanda reclamando la prestación por desempleo denegada por supuesto fraude | `demanda-reclamando-prestacion-desempleo-denegada-ss-066` |
+| SS-067 | Demanda para que se reanude el cobro de la prestación por desempleo | `demanda-reanude-cobro-prestacion-desempleo-ss-067` |
+| SS-068 | Demanda reclamando el subsidio de desempleo por responsabilidades familiares | `demanda-reclamando-subsidio-desempleo-responsabilidades-ss-068` |
+| SS-069 | Demanda contra el servicio de empleo que deniega el desempleo por inicio previo de actividad | `demanda-contra-servicio-empleo-deniega-desempleo-inicio-ss-069` |
+| SS-070 | Demanda contra el SEPE que deniega las prestaciones por desempleo | `demanda-contra-sepe-deniega-prestaciones-desempleo-ss-070` |
+| SS-071 | Escrito del beneficiario que pide poner fin a la suplicación porque no se le abona la prestación | `escrito-beneficiario-pide-poner-fin-suplicacion-porque-ss-071` |
+| SS-072 | Demanda de reconocimiento de gran incapacidad derivada de enfermedad común | `demanda-reconocimiento-gran-incapacidad-derivada-ss-072` |
+| SS-073 | Demanda para fijar la base reguladora de la pensión de incapacidad permanente absoluta | `demanda-fijar-base-reguladora-pension-incapacidad-ss-073` |
+| SS-074 | Demanda contra la resolución que extingue la pensión de invalidez no contributiva | `demanda-contra-resolucion-extingue-pension-invalidez-no-ss-074` |
+| SS-076 | Demanda de pensión no contributiva de jubilación | `demanda-pension-no-contributiva-jubilacion-ss-076` |
+| SS-077 | Demanda de revisión de la incapacidad permanente total por enfermedad común por error de diagnóstico | `demanda-revision-incapacidad-permanente-total-enfermedad-ss-077` |
+| SS-078 | Demanda contra el INSS para obtener el subsidio temporal en favor de familiares | `demanda-contra-inss-obtener-subsidio-temporal-favor-ss-078` |
+| SS-079 | Demanda de reconocimiento de las prestaciones en favor de familiares | `demanda-reconocimiento-prestaciones-favor-familiares-ss-079` |
+| SS-080 | Demanda de reintegro de los gastos sanitarios ocasionados en otro país de la Unión Europea | `demanda-reintegro-gastos-sanitarios-ocasionados-otro-ss-080` |
+| SS-081 | Demanda de reconocimiento de la pensión de jubilación | `demanda-reconocimiento-pension-jubilacion-ss-081` |
+| SS-082 | Demanda de reintegro de gastos médicos por una asistencia urgente de carácter vital | `demanda-reintegro-gastos-medicos-asistencia-urgente-ss-082` |
+| SS-083 | Demanda de reintegro de los gastos de una prótesis ortopédica | `demanda-reintegro-gastos-protesis-ortopedica-ss-083` |
+| SS-084 | Demanda por desempleo denegado por fraude de ley tras dejar un indefinido y firmar un temporal | `demanda-desempleo-denegado-fraude-ley-tras-dejar-ss-084` |
+| SS-085 | Demanda del SEPE para que se revoque una prestación por desempleo ya reconocida | `demanda-sepe-revoque-prestacion-desempleo-ya-reconocida-ss-085` |
+| SS-086 | Demanda contra la denegación del desempleo por considerar al solicitante socio y no asalariado | `demanda-contra-denegacion-desempleo-considerar-ss-086` |
+| SS-087 | Demanda que discute la base reguladora reconocida en la prestación por desempleo | `demanda-discute-base-reguladora-reconocida-prestacion-ss-087` |
+| SS-088 | Demanda de prestaciones de muerte y supervivencia por fallecimiento en accidente de trabajo | `demanda-prestaciones-muerte-supervivencia-fallecimiento-ss-088` |
+| SS-089 | Demanda de reconocimiento de gran incapacidad derivada de accidente de trabajo | `demanda-reconocimiento-gran-incapacidad-derivada-ss-089` |
+| SS-090 | Demanda de incapacidad permanente parcial por accidente de trabajo de un trabajador autónomo | `demanda-incapacidad-permanente-parcial-accidente-trabajo-ss-090` |
+| SS-091 | Demanda de la prestación de incapacidad temporal derivada de accidente de trabajo | `demanda-prestacion-incapacidad-temporal-derivada-ss-091` |
+| SS-092 | Demanda de revisión del grado de incapacidad permanente por agravación | `demanda-revision-grado-incapacidad-permanente-agravacion-ss-092` |
+| SS-093 | Demanda de reconocimiento de la pensión de viudedad | `demanda-reconocimiento-pension-viudedad-ss-093` |
+| SS-094 | Demanda de indemnización por lesiones permanentes no incapacitantes de origen profesional | `demanda-indemnizacion-lesiones-permanentes-no-ss-094` |
+| SS-095 | Demanda de la prestación por nacimiento y cuidado de menor | `demanda-prestacion-nacimiento-cuidado-menor-ss-095` |
+| SS-096 | Demanda de jubilación con responsabilidad de la empresa por falta de cotización o infracotización | `demanda-jubilacion-responsabilidad-empresa-falta-ss-096` |
+| SS-097 | Petición de ejecución de la sentencia que condena a un ente público a pagar prestaciones periódicas | `peticion-ejecucion-sentencia-condena-ente-publico-pagar-ss-097` |
 
 ## Privacidad
 

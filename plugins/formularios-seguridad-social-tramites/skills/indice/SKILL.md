@@ -1,11 +1,11 @@
 ---
 name: indice
-description: "Índice de los 9 formularios de Seguridad Social: reclamaciones previas y recursos administrativos. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre. Requiere Jurisprudenciator."
+description: "Índice de los 15 formularios de Seguridad Social: reclamaciones previas y recursos administrativos. Úsala cuando el usuario pida un documento de esta materia y no esté claro qué formulario usar: propone el adecuado y lo abre. Requiere Jurisprudenciator."
 ---
 
 # Seguridad Social: reclamaciones previas y recursos administrativos: índice de formularios
 
-> Plugin `formularios-seguridad-social-tramites` · 9 formularios · normativa revisada el 24-11-2026.
+> Plugin `formularios-seguridad-social-tramites` · 15 formularios · normativa revisada el 25-11-2026.
 
 ## Qué es
 
@@ -50,7 +50,7 @@ Busca por tipo de documento y por nombre. Cada formulario es una skill de este p
 
 ### Cómo usar el formulario elegido
 
-Invoca su skill. Si esa skill no aparece en tu lista de skills disponibles (puede pasar cuando hay muchas skills instaladas), lee directamente su fichero `SKILL.md`: está en la carpeta hermana de esta (`../<skill>/SKILL.md`). Síguelo igual que si la hubieras invocado: el formulario está al final de ese fichero y la guía del tema es el `marco.md` de esta carpeta.
+Invoca su skill. Si esa skill no aparece en tu lista de skills disponibles (puede pasar cuando hay muchas skills instaladas), lee directamente su fichero `SKILL.md`: está en la carpeta hermana de esta (`../<skill>/SKILL.md`). Síguelo igual que si la hubieras invocado: el formulario que se rellena está en `../<skill>/assets/formulario.md` y la guía del tema es el `marco.md` de esta carpeta.
 
 ### Demandas, peticiones y solicitudes iniciales (2)
 
@@ -59,6 +59,12 @@ Invoca su skill. Si esa skill no aparece en tu lista de skills disponibles (pued
 | SS-038 | Recurso contencioso-administrativo frente a actas de la Inspección de Trabajo y Seguridad Social | `recurso-contencioso-administrativo-frente-actas-ss-038` |
 | SS-041 | Solicitud de reconocimiento del derecho a asistencia sanitaria como titular | `solicitud-reconocimiento-derecho-asistencia-sanitaria-ss-041` |
 
+### Contestaciones, oposiciones y alegaciones (1)
+
+| Código | Formulario | Skill |
+|---|---|---|
+| SS-103 | Alegaciones del interesado en un expediente ante la Dirección Provincial de la entidad gestora | `alegaciones-interesado-expediente-ante-direccion-ss-103` |
+
 ### Recursos (2)
 
 | Código | Formulario | Skill |
@@ -66,17 +72,22 @@ Invoca su skill. Si esa skill no aparece en tu lista de skills disponibles (pued
 | SS-039 | Recurso de alzada contra sanción de Seguridad Social a empresarios, entidades formativas y autónomos | `recurso-alzada-contra-sancion-seguridad-social-ss-039` |
 | SS-040 | Recurso de alzada frente a un acta de liquidación (art. 34 LGSS) | `recurso-alzada-frente-acta-liquidacion-art-34-lgss-ss-040` |
 
-### Comunicaciones, requerimientos y cartas (2)
+### Comunicaciones, requerimientos y cartas (5)
 
 | Código | Formulario | Skill |
 |---|---|---|
 | SS-045 | Reclamación previa por denegación de incapacidad permanente total cualificada a un autónomo | `reclamacion-previa-denegacion-incapacidad-permanente-ss-045` |
 | SS-046 | Reclamación previa por denegación de incapacidad permanente absoluta a un trabajador autónomo | `reclamacion-previa-denegacion-incapacidad-permanente-ss-046` |
+| SS-099 | Reclamación previa ante el INSS en materia de prestaciones de la Seguridad Social | `reclamacion-previa-ante-inss-materia-prestaciones-ss-099` |
+| SS-101 | Reclamación previa contra la denegación del SOVI por no tener 1800 días cotizados ni Retiro Obrero | `reclamacion-previa-contra-denegacion-sovi-no-tener-1800-ss-101` |
+| SS-102 | Reclamación previa por denegarse el SOVI sin computar cotizaciones a mutualidades anteriores a 1967 | `reclamacion-previa-denegarse-sovi-sin-computar-ss-102` |
 
-### Escritos de trámite y otros (3)
+### Escritos de trámite y otros (5)
 
 | Código | Formulario | Skill |
 |---|---|---|
 | SS-042 | Pensión asistencial por ancianidad para españoles de origen retornados | `pension-asistencial-ancianidad-espanoles-origen-ss-042` |
 | SS-043 | Prestación por razón de necesidad por incapacidad o ancianidad para españoles de origen | `prestacion-razon-necesidad-incapacidad-ancianidad-ss-043` |
 | SS-044 | Prestación para españoles desplazados al extranjero de menores por la guerra civil | `prestacion-espanoles-desplazados-extranjero-menores-ss-044` |
+| SS-100 | Escrito al INSS para optar entre prestaciones incompatibles | `escrito-inss-optar-entre-prestaciones-incompatibles-ss-100` |
+| SS-104 | Ampliación o aclaración de una reclamación previa ya presentada | `ampliacion-aclaracion-reclamacion-previa-ya-presentada-ss-104` |

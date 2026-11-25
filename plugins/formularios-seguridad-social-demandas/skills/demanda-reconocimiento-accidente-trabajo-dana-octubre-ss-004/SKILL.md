@@ -5,7 +5,7 @@ description: "Demanda de reconocimiento de accidente de trabajo por la DANA de o
 
 # Demanda de reconocimiento de accidente de trabajo por la DANA de octubre y noviembre de 2024
 
-> Formulario **SS-004** del plugin **Seguridad Social: demandas y recursos ante lo social** (`formularios-seguridad-social-demandas`) · Seguridad Social › Demandas y escritos ante la jurisdicción social · normativa revisada el 24-11-2026.
+> Formulario **SS-004** del plugin **Seguridad Social: demandas y recursos ante lo social** (`formularios-seguridad-social-demandas`) · Seguridad Social › Demandas y escritos ante la jurisdicción social · normativa revisada el 25-11-2026.
 
 ## Qué es
 
@@ -20,13 +20,14 @@ Para obtener, en pocos minutos, un borrador completo de «Demanda de reconocimie
 1. **Pídelo con tus palabras**, por ejemplo: «Prepárame el documento “Demanda de reconocimiento de accidente de trabajo por la DANA de octubre y noviembre de 2024” para mi caso». También puedes invocarla directamente con `/formularios-seguridad-social-demandas:demanda-reconocimiento-accidente-trabajo-dana-octubre-ss-004`.
 2. **Dale los datos del caso** cuando te los pida (abajo tienes la lista para tenerlos a mano). Lo que no sepas queda como hueco visible.
 3. **Resuelve las opciones** que te plantee (las marcadas [ELEGIR] y [OPCIONAL] en el modelo).
-4. **Recibe el documento en Word, tal cual es el formulario**: empieza por su primera línea (por ejemplo «En [LOCALIDAD], a [FECHA]» o «A LA SECCIÓN…»), sin títulos ni notas añadidas, en Times New Roman 12, interlineado 1,15 y texto justificado. Lo pendiente, las normas comprobadas y el plazo te los dice en el chat.
+4. **Recibe el documento en Word, tal cual es el formulario**: empieza por su primera línea (por ejemplo «En [LOCALIDAD], a [FECHA]» o «A LA SECCIÓN…»), sin títulos ni notas añadidas, en Times New Roman 11, interlineado 1,15 y texto justificado. Lo pendiente, las normas comprobadas y el plazo te los dice en el chat.
 
 Si no estás seguro de que este sea el formulario que necesitas, usa el índice del plugin: `/formularios-seguridad-social-demandas:indice`.
 
 ## Qué contiene esta skill
 
-- Este fichero: al final, en «Texto del formulario», está el formulario tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…].
+- `SKILL.md` (este fichero): qué es el formulario, para qué sirve, cómo se usa, los datos que pide, las normas que cita, los avisos de actualización y las instrucciones para Claude.
+- `assets/formulario.md`: el formulario seco, tal cual, desde su primera línea hasta la firma, con sus campos [EN MAYÚSCULAS] y sus opciones [ELEGIR…] / [OPCIONAL…]. Es el texto que se rellena; no lleva explicaciones.
 - `../indice/marco.md` (en la skill `indice` del plugin): la guía del tema (Seguridad Social: demandas y recursos ante lo social) con las normas, órganos y plazos vigentes que Claude lee antes de redactar.
 
 ## Datos que conviene tener a mano
@@ -90,81 +91,15 @@ Formulario actualizado conforme a las novedades introducidas por el Real Decreto
 ### Flujo
 
 1. **Paso 0**: comprueba Jurisprudenciator (arriba).
-2. Lee entero el «Texto del formulario» (al final de este fichero) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
+2. Lee entero `assets/formulario.md` (el formulario que vas a rellenar, en la carpeta de esta skill) y la parte de `../indice/marco.md` que afecte al caso. Limítate a la materia de este formulario: no añadas contenido ajeno a él.
 3. Pide los datos de la lista en una sola tanda. Si un dato aparece varias veces, aclara a qué persona o acto corresponde cada vez. Lo que el usuario no sepa se queda como hueco visible con su etiqueta (p. ej. [FECHA]).
 4. Resuelve cada [ELEGIR …] y cada [OPCIONAL …] según los hechos, y sustituye cualquier indicación entre paréntesis del formulario («(se describirá…)», «(indicar…)») por el contenido que corresponda. Redacta las partes que dependen del caso (hechos, motivos, descripción de bienes).
 5. Aplica los avisos de actualización en el lugar que indican. Comprueba con `buscar_articulo` cada norma citada; si alguna ha cambiado, usa la redacción vigente. Si citas jurisprudencia, localízala con `buscar_sentencias` o `buscar_por_cita` y léela con `leer_sentencias`.
 6. Antes de entregarlo, pasa `verificar_escrito` con las frases que citan normas o sentencias y corrige lo que señale.
 7. **Documento final = el formulario tal cual, rellenado y limpio.**
-   - Empieza exactamente por la primera línea del «Texto del formulario» y sigue su estructura y su orden hasta la firma.
+   - Empieza exactamente por la primera línea de `assets/formulario.md` y sigue su estructura y su orden hasta la firma.
    - No pongas en el documento título, nombre del formulario o de la skill, código, encabezados, «Para qué sirve», leyendas, avisos, notas de uso, comentarios ni explicaciones. Tampoco marcas [ELEGIR…] u [OPCIONAL…]: ya están resueltas.
-   - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 12 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
+   - Formato Word (.docx, con la skill de Word disponible): **Times New Roman 11 pt** en todo el documento, **interlineado 1,15**, **texto justificado**, márgenes de 2,5 cm. Los rótulos del formulario (REUNIDOS, CLÁUSULAS, HECHOS, SUPLICO…) en su propia línea y en negrita, sin cambiar su texto.
 8. En el chat (nunca dentro del documento): datos pendientes, partes redactadas por ti, normas y sentencias comprobadas con Jurisprudenciator (y, si algún dato sale de internet, cuál y su enlace) y, si es un escrito judicial o administrativo, el plazo y el órgano ante el que se presenta.
 
 El resultado es un borrador para que lo revise un profesional antes de usarlo.
-
-## Texto del formulario
-
-Lo que sigue, hasta el final de este fichero, es el formulario tal cual: desde su primera línea hasta la firma.
-
-A LA SECCIÓN DE LO SOCIAL DEL TRIBUNAL DE INSTANCIA DE [SEDE] – PLAZA N.º [Nº]
-
-D./Dña. [NOMBRE Y APELLIDOS], con DNI nº [DNI/NIE], y número de afiliación a la Seguridad Social [Nº DE AFILIACIÓN], y con domicilio a efectos de notificaciones en el Despacho del Letrado/a D./Dña. [NOMBRE Y APELLIDOS], sito en [LOCALIDAD], teléfono [TELÉFONO], correo electrónico [CORREO ELECTRÓNICO], ante ese Tribunal comparezco y como mejor proceda en Derecho, DICE:
-
-Que por medio del presente escrito formula DEMANDA DE DECLARACIÓN DE CONTINGENCIA COMO ACCIDENTE DE TRABAJO, causante de los períodos de incapacidad temporal y baja médica entre el [FECHA] y el [FECHA] y, por tanto, del derecho de este demandante a beneficiarse de las prestaciones de [ELEGIR: INCAPACIDAD TEMPORAL / INCAPACIDAD PERMANENTE] correspondientes a dicha contingencia contra el INSTITUTO NACIONAL DE LA SEGURIDAD SOCIAL, en la persona de su representante legal, todo ello en base a los siguientes hechos y fundamentos de Derecho:
-
-HECHOS
-
-PRIMERO.- Que como consecuencia de la DANA acaecida en [LOCALIDAD] los días [FECHAS], sufrí una serie de [ELEGIR: daños personales / lesiones / accidente]
-daños personales
-lesiones
-accidente
-  que determinaron mi situación de [ELEGIR: Incapacidad Temporal / Incapacidad Permanente] con efectos desde el día o una IT que posteriormente derivó en IP
-
-SEGUNDO.- Que
-
-el médico facultativo de [NOMBRE DEL CENTRO MÉDICO]
-
-el Equipo de Valoración de Incapacidades determinó que la contingencia de la que derivaba mi patología era enfermedad común y no accidente de trabajo.
-
-TERCERO.- Que, al no estar conforme con dicha calificación de la contingencia, este demandante solicitó la determinación de la contingencia como accidente de trabajo, que fue denegada por resolución de fecha [FECHA], contra la que se formuló reclamación previa a la vía judicial que, asimismo fue denegada por resolución de fecha [FECHA], expediente [Nº DE EXPEDIENTE].
-
-Se acompañan como DOCS. N.º [NÚMERO] copia de las citadas resoluciones y la reclamación previa.
-
-CUARTO.- Que el hecho causante se produjo el día [FECHA], en la localidad de [LOCALIDAD] y fue consecuencia directa de un siniestro ocasionado por la DANA que azotó a diferentes municipios de España, como se acredita con la siguiente documentación: [DOCUMENTOS ACREDITATIVOS], por lo que debe considerarse la contingencia derivada de accidente de trabajo en virtud de lo establecido en el artículo 25 del Real Decreto-ley 6/2024, de 5 de noviembre, por el que se adoptan medidas urgentes de respuesta ante los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.
-
-Asimismo, y en aplicación de lo establecido en el apartado 1 del citado artículo, como consecuencia de la asimilación a accidente de trabajo, no se requiere para su percepción, período mínimo de cotización.
-
-QUINTO.- Que, por lo anteriormente expuesto y no encontrando conforme a Derecho la referida Resolución en cuanto a la contingencia de la que deriva la incapacidad reconocida, por medio del presente escrito, dentro del plazo legalmente establecido y de conformidad con lo señalado por el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la jurisdicción social, vengo a interponer DEMANDA ante la Sección de lo Social del Tribunal de Instancia.
-
-A los anteriores hechos les son de aplicación los siguientes,
-
-FUNDAMENTOS DE DERECHO
-
-I.- Es competente el Tribunal al que me dirijo en virtud de lo dispuesto en los artículos 1, 2, 6 y 10 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción Social.
-
-II.- Son de aplicación el artículo 71 de la Ley 36/2011, que regula la reclamación previa, y los artículos 140 a 146 de la misma, reguladores de los procesos seguidos ante Seguridad Social.
-
-III.- En cuanto al fondo del asunto, resulta de aplicación el art. 25 del Real Decreto-ley 6/2024, de 5 de noviembre, por el que se adoptan medidas urgentes de respuesta ante los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.
-
-Por lo expuesto,
-
-SUPLICO A LA SECCIÓN DE LO SOCIAL DEL TRIBUNAL DE INSTANCIA, que teniendo por presentado este escrito en tiempo y forma, con los documentos que se acompañan, se sirva admitirlo y, en su virtud, tenga por interpuesta demanda sobre DETERMINACIÓN DE CONTINGENCIAS contra el INSTITUTO NACIONAL DE LA SEGURIDAD SOCIAL, tramitando la misma conforme a Derecho, citando a las partes para los trámites previos de conciliación y, en su caso, de juicio, concluyendo las actuaciones con una sentencia estimatoria de la demanda, con los efectos legales que se deriven de tal pronunciamiento, en la que se acuerde declarar que mi situación de incapacidad [ELEGIR: temporal / permanente] deriva de accidente de trabajo.
-
-Por ser de Justicia que pido en [LUGAR], a [FECHA].
-
-PRIMER OTROSI DIGO que se solicita la reclamación de oficio al INSS del expediente y antecedentes que posea en relación con el contenido de la demanda.
-
-SEGUNDO OTROSI DIGO que esta parte acudirá al acto del juicio oral representada de Letrado/a.
-
-TERCER OTROSI DIGO que interesa al Derecho de esta parte que se practiquen en el acto del juicio oral los siguientes
-
-MEDIOS DE PRUEBA
-
-- DOCUMENTAL, TESTIFICAL Y PERICIAL: la aportada con la demanda y la que esta parte aportará en el acto del juicio.
-
-SUPLICO AL TRIBUNAL que tenga por hechas las anteriores manifestaciones y por propuesta la prueba, la admita y la estime pertinente.
-
-Por ser de Justicia que reitero en el lugar y fecha "ut supra"
-
-Fdo.: D./Dña. [NOMBRE Y APELLIDOS]

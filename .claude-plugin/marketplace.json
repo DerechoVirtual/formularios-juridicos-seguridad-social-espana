@@ -5,15 +5,15 @@
     "url": "https://jurisprudenciator.lexiaipro.org"
   },
   "metadata": {
-    "description": "Formularios jurídicos de España para Claude · Seguridad Social: 3 plugins por materia (62 formularios), una skill por formulario, cada una conectada a Jurisprudenciator: sin él las skills no redactan ni verifican nada.",
-    "version": "1.0.0"
+    "description": "Formularios jurídicos de España para Claude · Seguridad Social: 3 plugins por materia (99 formularios), una skill por formulario, cada una conectada a Jurisprudenciator: sin él las skills no redactan ni verifican nada.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "formularios-seguridad-social-demandas",
       "source": "./plugins/formularios-seguridad-social-demandas",
-      "description": "Seguridad Social: demandas y recursos ante lo social · España (37 formularios). Para reclamar prestaciones ante la Sección de lo Social: demandas de incapacidad permanente e incapacidad temporal, altas médicas, desempleo, cese de actividad de autónomos, recargo de prestaciones, responsabilidad empresarial, mejoras voluntarias, recurso de suplicación y escritos de trámite. Requiere Jurisprudenciator conectado: sin él las skills no redactan ni verifican nada.",
-      "version": "1.0.0",
+      "description": "Seguridad Social: demandas y recursos ante lo social · España (68 formularios). Para reclamar prestaciones ante la Sección de lo Social: demandas de incapacidad permanente e incapacidad temporal, altas médicas, desempleo, cese de actividad de autónomos, recargo de prestaciones, responsabilidad empresarial, mejoras voluntarias, recurso de suplicación y escritos de trámite. Requiere Jurisprudenciator conectado: sin él las skills no redactan ni verifican nada.",
+      "version": "1.1.0",
       "category": "legal",
       "keywords": [
         "jurisprudenciator",
@@ -28,8 +28,8 @@
     {
       "name": "formularios-seguridad-social-tramites",
       "source": "./plugins/formularios-seguridad-social-tramites",
-      "description": "Seguridad Social: reclamaciones previas y recursos administrativos · España (9 formularios). Para la vía administrativa ante el INSS, la TGSS, el SEPE y la Inspección de Trabajo: reclamaciones previas, recursos de alzada contra actas y sanciones, solicitudes de prestaciones y certificados de silencio. Requiere Jurisprudenciator conectado: sin él las skills no redactan ni verifican nada.",
-      "version": "1.0.0",
+      "description": "Seguridad Social: reclamaciones previas y recursos administrativos · España (15 formularios). Para la vía administrativa ante el INSS, la TGSS, el SEPE y la Inspección de Trabajo: reclamaciones previas, recursos de alzada contra actas y sanciones, solicitudes de prestaciones y certificados de silencio. Requiere Jurisprudenciator conectado: sin él las skills no redactan ni verifican nada.",
+      "version": "1.1.0",
       "category": "legal",
       "keywords": [
         "jurisprudenciator",
@@ -45,7 +45,7 @@
       "name": "formularios-seguridad-social-certificados-y-convenios",
       "source": "./plugins/formularios-seguridad-social-certificados-y-convenios",
       "description": "Seguridad Social: certificados, declaraciones y convenios internacionales · España (16 formularios). Para acreditar situaciones ante la Seguridad Social: certificados de periodos de actividad (deportistas, ministros de culto…), declaraciones responsables, acuerdos de jubilación parcial y fichas de los convenios bilaterales e internacionales de Seguridad Social. Requiere Jurisprudenciator conectado: sin él las skills no redactan ni verifican nada.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "legal",
       "keywords": [
         "jurisprudenciator",
